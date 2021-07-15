@@ -34,8 +34,8 @@ app.use(
             httpOnly: true,
         },
     })
-    );
+);
 
 app.use(routes);
 
-    module.exports = app;
+module.exports = app;
