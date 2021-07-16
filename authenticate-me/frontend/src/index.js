@@ -16,7 +16,7 @@ if (process.env.NODE_ENV !== 'production') {
 
   window.csrfFetch = csrfFetch;
   window.store = store;
-  window.sessionActions = sessionActions;
+    window.sessionActions = sessionActions;
 }
 
 function Root() {
