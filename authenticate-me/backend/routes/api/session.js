@@ -19,6 +19,7 @@ const validateLogin = [
     handleValidationErrors,
 ];
 
+//login
 router.post(
     '/',
     validateLogin,
@@ -42,6 +43,18 @@ router.post(
         });
     }),
 );
+
+router.post(
+    '/demo',
+    asyncHandler(async (req, res) => {
+        const { credential, password } = req.body;
+        const demo = await User.login({ credential, password });
+        await setTokenCookie(res, demo);
+        return res.json({
+            demo,
+        })
+    })
+)
 
 // Log out
 router.delete(
