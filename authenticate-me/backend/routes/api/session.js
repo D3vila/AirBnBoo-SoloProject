@@ -1,12 +1,13 @@
 // backend/routes/api/session.js
 const express = require('express')
 const asyncHandler = require('express-async-handler');
+
 const { check } = require('express-validator');
 const { handleValidationErrors } = require('../../utils/validation');
-const router = express.Router();
-
-const { setTokenCookie, restoreUser } = require('../../utils/auth');
 const { User } = require('../../db/models');
+const { setTokenCookie, restoreUser } = require('../../utils/auth');
+
+const router = express.Router();
 
 const validateLogin = [
     check('credential')
@@ -44,17 +45,17 @@ router.post(
     }),
 );
 
-router.post(
-    '/demo',
-    asyncHandler(async (req, res) => {
-        const { credential, password } = req.body;
-        const demo = await User.login({ credential, password });
-        await setTokenCookie(res, demo);
-        return res.json({
-            demo,
-        })
-    })
-)
+// router.post(
+//     '/demo',
+//     asyncHandler(async (req, res) => {
+//         const { credential, password } = req.body;
+//         const demo = await User.login({ credential, password });
+//         await setTokenCookie(res, demo);
+//         return res.json({
+//             demo,
+//         })
+//     })
+// )
 
 // Log out
 router.delete(
