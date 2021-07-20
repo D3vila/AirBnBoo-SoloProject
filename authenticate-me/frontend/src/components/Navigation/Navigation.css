@@ -1,14 +1,171 @@
 .booIcon {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     position: absolute;
-    top: 15px;
+    margin: 5px;
+    top: 13px;
+    background-color: rgba(255, 255, 255, 0.767);
+    border-radius: 25px;
+    box-shadow: 5px 0px 20px rgb(0, 0, 0);
+    transition: transform 0.5s;
+}
 
+.booIcon:hover {
+    transform: translateY(-8px);
+    transition: 0.5s;
+    box-shadow: 5px 0px 5px rgb(0, 0, 0);
 }
 
 .AirbnbWord {
     font-family: 'Knewave', cursive;
-    font-size: 40px;
+    font-size: 60px;
     color: orange;
+    margin: 5px;
     text-decoration: none;
+    margin-left: 20px;
+    margin-top: 55px;
+    text-shadow: 5px 0 15px rgb(0, 0, 0);
+    position: static;
+    transition: transform 0.5s;
 }
+
+.AirbnbWord:hover {
+    transition: 1s;
+    text-shadow: 5px 0px 5px rgb(0, 0, 0);
+}
+
+.nav__list {
+    list-style-type: none;
+}
+
+.homeLogo {
+    background-color: rgb(107, 107, 107);
+    box-shadow: 0px 3px 15px rgb(253, 176, 33);
+    height: 100px;
+    width: 1890px;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-left: -50px;
+    margin-top: -16px;
+    position: relative;
+    z-index: 1000;
+}
+
+.topnav-right {
+    position: relative;
+    margin-left: 79%;
+    margin-top: -84px;
+    display: flex;
+    z-index: 1001;
+}
+
+.listing__link {
+    text-decoration: none;
+    border: orange solid;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 15px;
+    color: orange;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+    font-size: 20px;
+    z-index: 1001;
+}
+
+.listing__link:hover {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.signup__link {
+    text-decoration: none;
+    border: orange solid;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 15px;
+    color: orange;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+    font-size: 20px;
+    z-index: 1001;
+}
+
+.signup__link:hover{
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transition: 0.5s;
+
+}
+
+.Login__button {
+    text-decoration: none;
+    border: orange solid;
+    margin: 10px;
+    padding: 8px;
+    background-color: transparent;
+    border-radius: 15px;
+    color: orange;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+    font-size: 20px;
+    z-index: 1001;
+}
+
+.Login__button:hover {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.profile-dropdown {
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    background-color: rgba(255, 166, 0, 0.904);
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    position: absolute;
+    right: 7.25em;
+    top: 4em;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2;
+    text-align: center;
+    font-size: 18px;
+    z-index: 1001;
+  }
+
+  .logout__button {
+      background-color: transparent;
+      border: black solid;
+      border-radius: 10px;
+      width: 100%;
+      padding: 3px;
+      margin-top: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+  }
+
+  .logout__button:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 5px rgb(0, 0, 0);
+      font-weight: 650;
+      transition: 0.5s;
+  }
+
+  button.profile__button {
+    color: orange;
+    border: orange solid;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 8px;
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+  }
+
+  button.profile__button:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 10px rgb(0, 0, 0);
+      transition: 0.5s;
+  }
