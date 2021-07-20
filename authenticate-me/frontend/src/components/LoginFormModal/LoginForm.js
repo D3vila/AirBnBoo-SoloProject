@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import * as sessionActions from "../../store/session";
 import { useDispatch } from "react-redux";
-// import DemoLogin from "./DemoLogin";
 import './LoginForm.css';
 import { useHistory } from 'react-router-dom'
 
@@ -23,7 +22,6 @@ function LoginForm() {
     );
   };
 
-
   const demoLogin = () => {
     const credential = 'Demo-lition'
     const password = 'password'
@@ -38,14 +36,14 @@ function LoginForm() {
   return (
     <div className='whole__loginForm' >
       <form className='login__Form' onSubmit={handleSubmit}>
-        <ul className='errors__list'>
+        <ul>
           {errors.map((error, idx) => (
-            <li key={idx}>{error}</li>
+            <li className='error__list' key={idx}>{error}</li>
           ))}
         </ul>
         <div>
           <label className='cred__label'>
-            Username or Email
+            Username/Email
             <input
               type="text"
               value={credential}
@@ -54,7 +52,7 @@ function LoginForm() {
           </label>
         </div>
         <div>
-          <label>
+          <label className='password__label'>
             Password
             <input
               type="password"
@@ -64,10 +62,10 @@ function LoginForm() {
           </label>
         </div>
         <div>
-          <button className='login__button' type="submit">Log In</button>
+          <button className='login__button' type="submit">Login</button>
         </div>
         <div>
-          <button type='button' onClick={demoLogin}>Demo User</button>
+          <button className='demo__button' type='button' onClick={demoLogin}>Demo User</button>
         </div>
       </form>
     </div>
