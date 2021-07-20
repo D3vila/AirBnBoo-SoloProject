@@ -5,12 +5,11 @@ function HomePage() {
 
     return (
         <div className='home__container'>
-        {/*
             <video loop autoPlay muted>
                 <source src={castle} type='video/mp4' />
-            </video> */}
+            </video>
             <h1>Discover Paranormal Locations</h1>
-            <p>What are you waiting for?</p>
+            <p>Are you brave enough?</p>
         </div>
     );
 
