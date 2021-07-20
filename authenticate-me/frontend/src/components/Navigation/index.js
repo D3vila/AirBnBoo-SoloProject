@@ -27,23 +27,17 @@ function Navigation({ isLoaded }) {
   }
 
   return (
-    <>
-      <nav>
+    <ul>
+      <li>
         <div className='homeLogo'>
           <NavLink className='AirbnbWord' exact to="/">AirBnBoo
             <img className='booIcon' src={Logo} alt='icon' />
           </NavLink>
         </div>
-        <ul>
-          <li>
-            <NavLink to='/listings'>Listings</NavLink>
-          </li>
-          <li>
-            {isLoaded && sessionLinks}
-          </li>
-        </ul>
-      </nav>
-    </>
+        <NavLink to='/listings'>Listings</NavLink>
+        {isLoaded && sessionLinks}
+      </li>
+    </ul>
   );
 }
 
