@@ -1,14 +1,164 @@
 .booIcon {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     position: absolute;
-    top: 15px;
+    margin: 5px;
+    top: 13px;
+    background-color: rgba(255, 255, 255, 0.767);
+    border-radius: 25px;
+    box-shadow: 5px 0px 20px rgb(0, 0, 0);
+    transition: transform 0.5s;
+}
 
+.booIcon:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+    box-shadow: 5px 0px 5px rgb(0, 0, 0);
 }
 
 .AirbnbWord {
     font-family: 'Knewave', cursive;
-    font-size: 40px;
+    font-size: 60px;
     color: orange;
+    margin: 5px;
     text-decoration: none;
+    margin-left: 20px;
+    margin-top: 55px;
+    text-shadow: 5px 0 15px rgb(0, 0, 0);
+    position: static;
+    transition: transform 0.5s;
 }
+
+.AirbnbWord:hover {
+    transition: 1s;
+    text-shadow: 5px 0px 5px rgb(0, 0, 0);
+}
+
+.nav__list {
+    list-style-type: none;
+}
+
+.homeLogo {
+    background-color: rgba(0, 0, 0, 0.527);
+    box-shadow: 0px 5px 10px rgb(255, 255, 255);
+    height: 100px;
+    width: 150%;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    margin-left: -50px;
+    margin-top: -16px;
+
+
+    position: relative;
+}
+
+.topnav-right {
+    position: relative;
+    margin-left: 79%;
+    margin-top: -84px;
+    display: flex;
+
+
+}
+
+.listing__link {
+    text-decoration: none;
+    border: orange solid;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 15px;
+    color: orange;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.listing__link:hover {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.signup__link {
+    text-decoration: none;
+    border: orange solid;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 15px;
+    color: orange;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.signup__link:hover{
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+
+}
+
+.Login__button {
+    text-decoration: none;
+    border: orange solid;
+    margin: 10px;
+    padding: 8px;
+    background-color: transparent;
+    border-radius: 15px;
+    color: orange;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.Login__button:hover {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    background-color: rgba(255, 166, 0, 0.904);
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    position: absolute;
+    right: 7.25em;
+    top: 4em;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .logout__button {
+      background-color: transparent;
+      border: black solid;
+      border-radius: 10px;
+      width: 100%;
+      padding: 3px;
+      margin-top: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+  }
+
+  .logout__button:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 5px rgb(0, 0, 0);
+      font-weight: 650;
+  }
+
+  button.profile__button {
+    color: orange;
+    border: orange solid;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 8px;
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+  }
+
+  button.profile__button:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  }

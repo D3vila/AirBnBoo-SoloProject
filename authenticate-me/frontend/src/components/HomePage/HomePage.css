@@ -4,6 +4,7 @@ video {
     height: 100%;
     position: fixed;
     z-index: -1;
+
 }
 
 .home__container {
@@ -17,4 +18,8 @@ video {
     object-fit: contain;
 }
 
+body{
+    padding: 0;
+    margin: 0;
 
+}

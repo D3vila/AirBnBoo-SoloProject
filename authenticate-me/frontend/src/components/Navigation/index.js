@@ -12,15 +12,15 @@ function Navigation({ isLoaded }) {
   let sessionLinks;
   if (sessionUser) {
     sessionLinks = (
-      <>
+      <div className='profile__button'>
         <ProfileButton user={sessionUser} />
-      </>
+      </div>
     );
   } else {
     sessionLinks = (
       <>
         <LoginFormModal />
-        <NavLink to='/signup'>Sign Up</NavLink>
+        <NavLink className="signup__link" to='/signup'>Sign Up</NavLink>
       </>
 
     );
@@ -28,14 +28,16 @@ function Navigation({ isLoaded }) {
 
   return (
     <ul>
-      <li>
+      <li className='nav__list'>
         <div className='homeLogo'>
           <NavLink className='AirbnbWord' exact to="/">AirBnBoo
             <img className='booIcon' src={Logo} alt='icon' />
           </NavLink>
         </div>
-        <NavLink to='/listings'>Listings</NavLink>
-        {isLoaded && sessionLinks}
+        <div className='topnav-right'>
+          <NavLink className='listing__link' to='/listings'>Listings</NavLink>
+          {isLoaded && sessionLinks}
+        </div>
       </li>
     </ul>
   );
