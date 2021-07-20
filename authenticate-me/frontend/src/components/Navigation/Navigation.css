@@ -11,7 +11,7 @@
 }
 
 .booIcon:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     transition: 0.5s;
     box-shadow: 5px 0px 5px rgb(0, 0, 0);
 }
@@ -39,18 +39,17 @@
 }
 
 .homeLogo {
-    background-color: rgba(0, 0, 0, 0.527);
-    box-shadow: 0px 5px 10px rgb(255, 255, 255);
+    background-color: rgb(107, 107, 107);
+    box-shadow: 0px 3px 15px rgb(253, 176, 33);
     height: 100px;
-    width: 150%;
-    right: 0px;
-    left: 0px;
-    top: 0px;
+    width: 1890px;
+    right: 0;
+    left: 0;
+    top: 0;
     margin-left: -50px;
     margin-top: -16px;
-
-
     position: relative;
+    z-index: 1000;
 }
 
 .topnav-right {
@@ -58,8 +57,7 @@
     margin-left: 79%;
     margin-top: -84px;
     display: flex;
-
-
+    z-index: 1001;
 }
 
 .listing__link {
@@ -72,10 +70,12 @@
     font-family: 'Montserrat', sans-serif;
     text-shadow: 0 0 15px rgb(0, 0, 0);
     font-size: 20px;
+    z-index: 1001;
 }
 
 .listing__link:hover {
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transition: 0.5s;
 }
 
 .signup__link {
@@ -88,10 +88,12 @@
     font-family: 'Montserrat', sans-serif;
     text-shadow: 0 0 15px rgb(0, 0, 0);
     font-size: 20px;
+    z-index: 1001;
 }
 
 .signup__link:hover{
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transition: 0.5s;
 
 }
 
@@ -106,11 +108,13 @@
     font-family: 'Montserrat', sans-serif;
     text-shadow: 0 0 15px rgb(0, 0, 0);
     font-size: 20px;
+    z-index: 1001;
 }
 
 .Login__button:hover {
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .profile-dropdown {
@@ -126,6 +130,7 @@
     z-index: 2;
     text-align: center;
     font-size: 18px;
+    z-index: 1001;
   }
 
   .logout__button {
@@ -143,6 +148,7 @@
       cursor: pointer;
       box-shadow: 0px 0px 5px rgb(0, 0, 0);
       font-weight: 650;
+      transition: 0.5s;
   }
 
   button.profile__button {
@@ -161,4 +167,5 @@
   button.profile__button:hover {
       cursor: pointer;
       box-shadow: 0px 0px 10px rgb(0, 0, 0);
+      transition: 0.5s;
   }
