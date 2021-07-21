@@ -6,6 +6,7 @@ import * as sessionActions from "./store/session";
 import SignupFormPage from "./components/SignupFormPage";
 import HomePage from "./components/HomePage/index"
 import ListingsPage from "./components/ListingsPage";
+import ListingPage from "./components/ListingPage"
 import Navigation from "./components/Navigation";
 
 function App() {
@@ -23,8 +24,11 @@ function App() {
           <Route path='/' exact>
             <HomePage />
           </Route>
-          <Route path='/listings'>
+          <Route path='/listings' exact>
             <ListingsPage />
+          </Route>
+          <Route path='/listings/:id'>
+            <ListingPage />
           </Route>
           <Route path="/signup">
             <SignupFormPage />

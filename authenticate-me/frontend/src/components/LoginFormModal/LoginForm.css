@@ -11,12 +11,13 @@ div #modal-content {
 .error__list {
     list-style-type: none;
     text-align: left;
-    color:white;
+    color:rgb(209, 118, 0);
     font-size: 20px;
+    text-shadow: 0px 0px 1px rgb(0, 0, 0);
 }
 
 .login__Form {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(https://www.campliveoakfl.com/wp-content/uploads/2015/02/Stars.jpg);
+    background-color: rgb(214, 212, 212);
     background-size: cover;
     padding: 15px;
     border-radius: 15px;
@@ -26,7 +27,7 @@ div #modal-content {
 }
 
 .cred__label {
-    color: white;
+    color: black;
     position: relative;
 
     margin: 30px 0;
@@ -50,7 +51,7 @@ div #modal-content {
 
 .password__label {
     position: relative;
-    color:white;
+    color:black;
     margin: 30px 0;
 }
 
