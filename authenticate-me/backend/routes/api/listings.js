@@ -9,5 +9,12 @@ router.get('/', asyncHandler(async function (req, res) {
     return res.json(listings)
 }));
 
+router.get('/:id', asyncHandler(async function (req, res) {
+    const listing = await db.Spot.findByPk(req.params.id, {
+        include: [{ model: db.Booking }, { model: db.Review }],
+    });
+    return res.json(listing);
+}))
+
 
 module.exports = router;
