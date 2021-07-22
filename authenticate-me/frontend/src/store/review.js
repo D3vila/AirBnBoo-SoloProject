@@ -45,7 +45,7 @@ export const deleteReview = (id) => async dispatch => {
     const response = await csrfFetch(`/api/reviews/${id}`, {
         method: 'DELETE',
     });
-    if (!response.ok) throw response; 
+    if (!response.ok) throw response;
         const review = await response.json();
         dispatch(deleteOneReview(review));
         return review;

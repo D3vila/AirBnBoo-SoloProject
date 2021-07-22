@@ -27,9 +27,7 @@ export const getAListing = (listingId) => async dispatch => {
     dispatch(addOneListing(listing))
 }
 
-const initialState = {
-    list: []
-};
+const initialState = {};
 
 const listingsReducer = (state = initialState, action) => {
     switch (action.type) {
