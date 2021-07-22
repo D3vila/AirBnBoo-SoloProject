@@ -33,7 +33,7 @@ router.get('/:id', asyncHandler(async function (req, res) {
         include: { model: db.User },
         order: [['updatedAt', 'DESC']]
     });
-return res.json(reviews)
+    return res.json(reviews)
 }));
 
 module.exports = router;

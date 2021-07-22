@@ -1,13 +1,14 @@
 // frontend/src/App.js
-import React, { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { Route, Switch } from "react-router-dom";
-import * as sessionActions from "./store/session";
-import SignupFormPage from "./components/SignupFormPage";
-import HomePage from "./components/HomePage/index"
-import ListingsPage from "./components/ListingsPage";
-import ListingPage from "./components/ListingPage"
-import Navigation from "./components/Navigation";
+import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { Route, Switch } from 'react-router-dom';
+import * as sessionActions from './store/session';
+import SignupFormPage from './components/SignupFormPage';
+import HomePage from './components/HomePage/index'
+import ListingsPage from './components/ListingsPage';
+import ListingPage from './components/ListingPage'
+// import ProfilePage from './components'
+import Navigation from './components/Navigation';
 
 function App() {
   const dispatch = useDispatch();
@@ -30,8 +31,14 @@ function App() {
           <Route path='/listings/:id'>
             <ListingPage />
           </Route>
+          {/*<Route>
+            <ProfilePage />
+          </Route>*/}
           <Route path="/signup">
             <SignupFormPage />
+          </Route>
+          <Route>
+            <h1>Under construction or page not found</h1>
           </Route>
         </Switch>
       )}

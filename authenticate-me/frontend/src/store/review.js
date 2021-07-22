@@ -46,12 +46,22 @@ export const deleteReview = (id) => async dispatch => {
         method: 'DELETE',
     });
     if (!response.ok) throw response;
-        const review = await response.json();
-        dispatch(deleteOneReview(review));
-        return review;
-
-
+    const review = await response.json();
+    dispatch(deleteOneReview(review));
+    return review;
 }
+
+export const addReviewForm = addReview => async dispatch => {
+    const response = await csrfFetch('/api/reviews', {
+        method: 'POST',
+        body: JSON.stringify(addReview)
+    })
+    if (!response.ok) throw response;
+    const review = await response.json();
+    dispatch(addOneReview(review));
+    return review;
+}
+
 
 const initialState = {};
 
@@ -63,8 +73,8 @@ const reviewsReducer = (state = initialState, action) => {
                     ...state,
                     [action.review.id]: action.review
                 }
-                const reviewList = newState.list.map(id => newState[id]);
-                reviewList.push(action.review);
+                const reviewList = newState.list?.map(id => newState[id]);
+                reviewList?.push(action.review);
                 return newState;
             }
             return {
