@@ -10,7 +10,13 @@ function Reviews() {
     const dispatch = useDispatch();
 
     const reviews = useSelector((state) => ((Object.values(state.reviews))));// change to get reviews to listingId
+
     const listingReviews = reviews.filter(review => review.spotId === +id);
+
+    const sortedReviews = listingReviews.sort(function(a,b) {
+        return b.id - a.id;
+    })
+
     // console.log(reviews)
     // console.log(listingReviews)
     // console.log(id, +id) in the c
@@ -30,7 +36,7 @@ function Reviews() {
     return (
         <>
             <div className='reviews__container'>
-                {listingReviews.map((review) => {
+                {sortedReviews.map((review) => {
                     return (
                         <div key={review.id} className='review__container'>
                             <div className='reviewer__container'>

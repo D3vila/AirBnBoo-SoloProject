@@ -3,15 +3,15 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useHistory, useParams } from 'react-router';
 import { getAListing } from '../../store/listings';
 import Reviews from '../Reviews'
+import AddReviewForm from '../AddReviewForm/index'
 import './listing.css';
-
 
 
 function ListingPage() {
 
-    const dispatch = useDispatch();
-    // const sessionUser = useSelector(state => state.session.user);
     const { id } = useParams();
+    const dispatch = useDispatch();
+    const sessionUser = useSelector(state => state.session.user);
     // const history = useHistory();
 
     const listing = useSelector(state => {
@@ -22,18 +22,18 @@ function ListingPage() {
         dispatch(getAListing(id))
     }, [id, dispatch])
 
-    // let sessionReview;
-    // if (sessionUser) {
-    //     sessionReview = (
-    //         <CreateReview user={sessionUser} listing={id} />
-    //     )
-    // } else {
-    //     sessionReview = (
-    //         <>
-    //             <h2>Must be Login to leave a review</h2>
-    //         </>
-    //     )
-    // }
+    let sessionReview;
+    if (sessionUser) {
+        sessionReview = (
+            <AddReviewForm user={sessionUser} listing={id} />
+        )
+    } else {
+        sessionReview = (
+            <>
+                <h2>Must be Login to leave a review</h2>
+            </>
+        )
+    }
 
     // let sessionBookButton;
     // if (sessionUser) {
@@ -52,6 +52,7 @@ function ListingPage() {
         return null;
     }
 
+
     return (
         <>
             <div className='listing__container'>
@@ -64,7 +65,7 @@ function ListingPage() {
                     <p>{listing.description}</p>
                 </div>
                 <h1>Reviews</h1>
-                {/*sessionReviews*/}
+                {sessionReview}
                 <div>
                     <Reviews />
                     <div className='booking__container'>
