@@ -10,9 +10,10 @@ function Reviews() {
     const dispatch = useDispatch();
 
     const reviews = useSelector((state) => ((Object.values(state.reviews))));// change to get reviews to listingId
-    const listingReviews = reviews.filter(review => review.spotId === id)
+    const listingReviews = reviews.filter(review => review.spotId === +id);
     // console.log(reviews)
     // console.log(listingReviews)
+    // console.log(id, +id) in the c
 
     const removeReview = (id) => {
         dispatch(deleteReview(id))

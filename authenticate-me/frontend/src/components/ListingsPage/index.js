@@ -16,12 +16,13 @@ function ListingsPage() {
     if (!listings) {
         return null;
     }
+    
 
     return (
         <>
             <div className='listings__page'>
                 <div className='listings__container'>
-                    <nav>
+                    <nav className='nav__container'>
                         {listings.map(listing => {
                             return (
                                 <NavLink key={listing.id} to={`/listings/${listing.id}`}>
