@@ -2,15 +2,17 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory, useParams } from 'react-router';
 import { getAListing } from '../../store/listings';
+import Reviews from '../Reviews'
 import './listing.css';
+
 
 
 function ListingPage() {
 
     const dispatch = useDispatch();
-    const sessionUser = useSelector(state => state.session.user);
+    // const sessionUser = useSelector(state => state.session.user);
     const { id } = useParams();
-    const history = useHistory();
+    // const history = useHistory();
 
     const listing = useSelector(state => {
         return state.listings[id]
@@ -23,8 +25,16 @@ function ListingPage() {
     // let sessionReview;
     // if (sessionUser) {
     //     sessionReview = (
+    //         <CreateReview user={sessionUser} listing={id} />
+    //     )
+    // } else {
+    //     sessionReview = (
+    //         <>
+    //             <h2>Must be Login to leave a review</h2>
+    //         </>
     //     )
     // }
+
     // let sessionBookButton;
     // if (sessionUser) {
     //     sessionBookButton = (
@@ -56,7 +66,7 @@ function ListingPage() {
                 <h1>Reviews</h1>
                 {/*sessionReviews*/}
                 <div>
-                    {/*<Reviews /> */}
+                    <Reviews />
                     <div className='booking__container'>
                         <div className='price__container'>
                             <div className='price__one'>${listing.price}</div>

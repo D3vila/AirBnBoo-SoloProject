@@ -19,21 +19,21 @@ function ListingsPage() {
 
     return (
         <>
-            <div>
-                <div>
+            <div className='listings__page'>
+                <div className='listings__container'>
                     <nav>
                         {listings.map(listing => {
                             return (
                                 <NavLink key={listing.id} to={`/listings/${listing.id}`}>
-                                    <div>
+                                    <div className='nav__image__container'>
                                         <div className='nav__image'>
-                                            <img src={listing.img} alt=''></img>
+                                            <img className='image' src={listing.img} alt=''></img>
                                         </div>
-                                        <div>
+                                        <div className='listing__info'>
                                             <div className='listing__name'>{listing.name}</div>
                                             <div className='listing__address'>{listing.address}</div>
                                         </div>
-                                        <div>
+                                        <div className='price__container'>
                                             <div className='listing__price'>${listing.price}/night</div>
                                         </div>
                                     </div>
