@@ -4,6 +4,7 @@ import { useHistory, useParams } from 'react-router';
 import { getAListing } from '../../store/listings';
 import Reviews from '../Reviews'
 import AddReviewForm from '../AddReviewForm/index'
+import { addBooking } from '../../store/bookings';
 import './listing.css';
 
 
@@ -12,7 +13,7 @@ function ListingPage() {
     const { id } = useParams();
     const dispatch = useDispatch();
     const sessionUser = useSelector(state => state.session.user);
-    // const history = useHistory();
+    const history = useHistory();
 
     const listing = useSelector(state => {
         return state.listings[id]
@@ -35,18 +36,31 @@ function ListingPage() {
         )
     }
 
-    // let sessionBookButton;
-    // if (sessionUser) {
-    //     sessionBookButton = (
-    //         <button type='submit' onClick={bookStay}>Book</button>
-    //     );
-    // } else {
-    //     sessionBookButton = (
-    //         <>
-    //             <button type='button' disabled>Login to Book</button>
-    //         </>
-    //     )
-    // }
+
+    const bookingStay = async (e) => {
+        e.preventDefault()
+
+        let bookingForm = {
+            spotId: id,
+            userId: sessionUser.id,
+        }
+        history.push('/profile');
+        await dispatch(addBooking(bookingForm))
+    }
+
+
+    let sessionBookButton;
+    if (sessionUser) {
+        sessionBookButton = (
+            <button type='submit' onClick={bookingStay}>Book</button>
+        );
+    } else {
+        sessionBookButton = (
+            <>
+                <button type='button' disabled>Login to Book</button>
+            </>
+        )
+    }
 
     if (!listing) {
         return null;
@@ -76,18 +90,18 @@ function ListingPage() {
                         <div className='booking__dates'>
                             <div className='checkin__container'>
                                 <div>Check-In</div>
-                                <div className='date'></div>
+                                <div className='date'>{ }</div>
                             </div>
                             <div className='checkout__container'>
                                 <div>Checkout</div>
-                                <div className='date'></div>
+                                <div className='date'>{ }</div>
                             </div>
                             <div className='guests'>
                                 <div >Guests</div>
                                 <div className='date'></div>
                             </div>
-                            {/*sessionBookButton */}
                         </div>
+                        {sessionBookButton}
                     </div>
                 </div>
             </div>

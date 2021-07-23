@@ -9,11 +9,12 @@ function Reviews() {
     const { id } = useParams();
     const dispatch = useDispatch();
 
-    const reviews = useSelector((state) => ((Object.values(state.reviews))));// change to get reviews to listingId
-
+    // getting all reviews from the array
+    const reviews = useSelector((state) => ((Object.values(state.reviews))));
+    // filtering all the reviews that match the review.spotId to the review.id into a number
     const listingReviews = reviews.filter(review => review.spotId === +id);
 
-    const sortedReviews = listingReviews.sort(function(a,b) {
+    const sortedReviews = listingReviews.sort(function (a, b) {
         return b.id - a.id;
     })
 
