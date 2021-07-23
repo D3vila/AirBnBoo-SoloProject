@@ -87,20 +87,6 @@ function ListingPage() {
                             <div className='price__one'>${listing.price}</div>
                             <div className='per__night'>/night</div>
                         </div>
-                        <div className='booking__dates'>
-                            <div className='checkin__container'>
-                                <div>Check-In</div>
-                                <div className='date'>{ }</div>
-                            </div>
-                            <div className='checkout__container'>
-                                <div>Checkout</div>
-                                <div className='date'>{ }</div>
-                            </div>
-                            <div className='guests'>
-                                <div >Guests</div>
-                                <div className='date'></div>
-                            </div>
-                        </div>
                         {sessionBookButton}
                     </div>
                 </div>
