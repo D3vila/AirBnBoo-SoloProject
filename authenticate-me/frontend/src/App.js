@@ -7,7 +7,7 @@ import SignupFormPage from './components/SignupFormPage';
 import HomePage from './components/HomePage/index'
 import ListingsPage from './components/ListingsPage';
 import ListingPage from './components/ListingPage'
-// import ProfilePage from './components'
+import ProfilePage from './components/ProfilePage'
 import Navigation from './components/Navigation';
 
 function App() {
@@ -31,9 +31,9 @@ function App() {
           <Route path='/listings/:id'>
             <ListingPage />
           </Route>
-          {/*<Route>
+          <Route path='/profile'>
             <ProfilePage />
-          </Route>*/}
+          </Route>
           <Route path="/signup">
             <SignupFormPage />
           </Route>
