@@ -1,10 +1,9 @@
 {
-  "name": "authenticate-me",
+  "name": "airbnboo-soloproject",
   "version": "1.0.0",
-  "description": "",
+  "description": "👻AirBnBoo👻",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "npm run build --prefix frontend",
     "install": "npm --prefix backend install backend && npm --prefix frontend install frontend",
     "dev:backend": "npm install --prefix backend start",
@@ -13,7 +12,14 @@
     "sequelize-cli": "npm run --prefix backend sequelize-cli",
     "start": "npm start --prefix backend"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D3vila/AirBnBoo-SoloProject.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/D3vila/AirBnBoo-SoloProject/issues"
+  },
+  "homepage": "https://github.com/D3vila/AirBnBoo-SoloProject#readme"
 }
