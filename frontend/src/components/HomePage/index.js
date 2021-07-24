@@ -6,7 +6,7 @@ function HomePage() {
 
     return (
         <div className='home__container'>
-            <video loop autoPlay muted>
+            <video className='castleVid' loop autoPlay muted>
                 <source src={castle} type='video/mp4' />
             </video>
             <header className='htitle'>
