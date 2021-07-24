@@ -3,7 +3,7 @@
     align-content: flex-start;
     flex-direction: column;
     justify-content: flex-start;
-    width: 50%;
+    width: 65%;
     border-bottom: 1px solid rgb(253, 176, 88);
     padding-bottom: 5px;
 }
@@ -11,7 +11,7 @@
 .review-text-area {
     box-shadow: 0 0 10px gray;
     border: none;
-    padding: 1em;
+    padding: 25px;
     border-radius: 20px;
     font-size: 15px;
     margin-right: 2em;
@@ -21,13 +21,13 @@
 
 .review-text-area:focus {
     outline-width: 0px;
-    box-shadow: 0 0 20px gray;
+    box-shadow: 0 0 20px rgb(211, 137, 54);
 }
 
 .reviewSubmit__button {
     background-color: rgb(241, 162, 58);
     height: 40px;
-    width: 96%;
+    width: 15%;
     border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 15px;
