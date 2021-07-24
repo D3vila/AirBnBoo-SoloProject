@@ -21,8 +21,8 @@ const AddReviewForm = ({ user, listing }) => {
     };
 
     return (
-        <div className='form__container'>
-            <form className='review__form' onSubmit={handleSubmit}>
+        <div className='form__container2'>
+            <form className='review__form2' onSubmit={handleSubmit}>
                 <textarea
                     className='review-text-area'
                     type='text'
