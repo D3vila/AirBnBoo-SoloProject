@@ -32,15 +32,29 @@ function ProfileButton({ user }) {
     dispatch(sessionActions.logout());
   };
 
+  const profileRedirect = (e) => {
+    e.preventDefault();
+    history.push('/profile');
+  }
+
   return (
     <>
       <button className='profile__button' onClick={openMenu}>
-        Profile <i className="fas fa-bars"></i>
+        <div className='icon__container'>
+          <div className='ghost'>
+            <i className="fas fa-ghost"></i>
+          </div>
+          <div className='bar'>
+            <i className="fas fa-bars"></i>
+          </div>
+        </div>
       </button>
       {showMenu && (
         <ul className="profile-dropdown">
           <li>Hi, {user.username}</li>
-          <li>{user.email}</li>
+          <li>
+            <button className='goProfile__button' onClick={profileRedirect}>MyProfile</button>
+          </li>
           <li>
             <button className='logout__button' onClick={logout}>Log Out</button>
           </li>

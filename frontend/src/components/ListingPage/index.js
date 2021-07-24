@@ -31,7 +31,7 @@ function ListingPage() {
     } else {
         sessionReview = (
             <>
-                <h2>Must be Login to leave a review</h2>
+                <h2 className='mustBeLogin'>- Must be Login to leave a review -</h2>
             </>
         )
     }
@@ -52,12 +52,12 @@ function ListingPage() {
     let sessionBookButton;
     if (sessionUser) {
         sessionBookButton = (
-            <button type='submit' onClick={bookingStay}>Book</button>
+            <button className='booking__button3' type='submit' onClick={bookingStay}>Book</button>
         );
     } else {
         sessionBookButton = (
             <>
-                <button type='button' disabled>Login to Book</button>
+                <button className='booking__button3' type='button' disabled>Login to Book</button>
             </>
         )
     }
@@ -69,23 +69,25 @@ function ListingPage() {
 
     return (
         <>
-            <div className='listing__container'>
+            <div className='listing__container1'>
                 <h1>{listing.name}</h1>
-                <h2>{listing.address}</h2>
-                <div className='image__container'>
-                    <img src={listing.img} alt=''></img>
+                <h2 className='listing__address1'>{listing.address}</h2>
+                <div className='display__container1'>
+                    <div className='image__container'>
+                        <img className='mainImage' src={listing.img} alt=''></img>
+                    </div>
+                    <div className='listing__info1'>
+                        <p className='listDesc1'>{listing.description}</p>
+                    </div>
                 </div>
-                <div className='listing__info'>
-                    <p>{listing.description}</p>
-                </div>
-                <h1>Reviews</h1>
+                <h1 className='reviewsTitle123'>Reviews</h1>
                 {sessionReview}
-                <div>
+                <div className='lower__quad'>
                     <Reviews />
-                    <div className='booking__container'>
-                        <div className='price__container'>
+                    <div className='booking__container1'>
+                        <div className='price__container1'>
                             <div className='price__one'>${listing.price}</div>
-                            <div className='per__night'>/night</div>
+                            <div className='per__night'>/ night</div>
                         </div>
                         {sessionBookButton}
                     </div>

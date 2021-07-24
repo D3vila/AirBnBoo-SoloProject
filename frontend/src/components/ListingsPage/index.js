@@ -16,7 +16,7 @@ function ListingsPage() {
     if (!listings) {
         return null;
     }
-    
+
 
     return (
         <>
@@ -35,7 +35,7 @@ function ListingsPage() {
                                             <div className='listing__address'>{listing.address}</div>
                                         </div>
                                         <div className='price__container'>
-                                            <div className='listing__price'>${listing.price}/night</div>
+                                            <div className='listing__price'>${listing.price} / night</div>
                                         </div>
                                     </div>
                                 </NavLink>

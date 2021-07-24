@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import { getReviews, deleteReview } from '../../store/review';
 import deletebutton from '../videos/delete.png'
+import './Reviews.css'
+import ghostProfile from '../videos/profileGhost.png'
 
 function Reviews() {
     const sessionUser = useSelector(state => state.session.user);
@@ -36,22 +38,26 @@ function Reviews() {
 
     return (
         <>
-            <div className='reviews__container'>
+            <div className='reviews__container12'>
                 {sortedReviews.map((review) => {
                     return (
-                        <div key={review.id} className='review__container'>
-                            <div className='reviewer__container'>
-                                {/*<div className="image__container">
-                                    <img src={review.User.image_url} alt="reviewer"></img>
-                                </div>*/}
-                                <div className='reviewer'>
+                        <div key={review.id} className='review__container12'>
+                            <div className='reviewer__container12'>
+                                <div className="image__container12">
+                                    <img className='image12' src={ghostProfile} alt="reviewer"></img>
+                                </div>
+                                <div className='reviewer12'>
                                     {review.User.username}
                                 </div>
+                                <div className='timestamp12'>
+                                    {review.createdAt}
+                                </div>
                             </div>
-                            <div className='review__text'>{review.review}</div>
+                            <div className='review__text12'>{review.review}</div>
                             {sessionUser && sessionUser.id === review.User.id &&
-                                <button id='deleteReview' onClick={() => removeReview(review.id)}>
-                                    <img src={deletebutton} alt='delete logo' />
+                                <button id='deleteReview12' onClick={() => removeReview(review.id)}>
+                                    {/*<img src={deletebutton} alt='delete logo' />*/}
+                                    <i class="fas fa-trash-alt"></i>
                                 </button>
                             }
                         </div>
