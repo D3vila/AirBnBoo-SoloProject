@@ -51,7 +51,7 @@ function ProfilePage() {
                 </div>
             </div>
             <div className='booking__container'>
-                <h1 className='booking__title'>Haunted Getaways Booked</h1>
+                <h1 className='booking__title'>Your Booked Haunted Getaways </h1>
                 {sessionBookings}
             </div>
         </>

@@ -1,23 +1,26 @@
 body {
-    padding: 0;
-    margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
 .lighthouse__vid {
     width: 100%;
+    height: auto;
     position: relative;
     z-index: 0;
+
 }
 
 .left__title {
-
     font-size: 50px;
     font-weight: 600;
     z-index: 10;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 8px rgb(0, 0, 0);
 }
 
 .right__title {
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 8px rgb(255, 136, 1);
     font-size: 25px;
     font-weight: 600;
 }
@@ -45,8 +48,10 @@ body {
 }
 
 .left__subTitle {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 8px rgb(0, 0, 0);
     font-size: 25px;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .right__side .half__page {
@@ -107,7 +112,13 @@ body {
 }
 
 .video__container1 {
-    position: relative;
+    display: block;
+    height: 1249px;
+    left: 0;
+    position: absolute;
+    top: -200px;
+    width: 50%;
+    overflow: hidden;
 
 }
 
@@ -116,5 +127,5 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 0;
 }

@@ -3,7 +3,7 @@ import * as sessionActions from '../../store/session';
 import { useDispatch, useSelector } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import './SignupForm.css';
-import lightHouse from '../videos/oceanView-lighthouse.mp4'
+import lightHouse from '../videos/oceanView-lighthouse1.mp4'
 
 function SignupFormPage() {
     const dispatch = useDispatch();
@@ -42,7 +42,7 @@ function SignupFormPage() {
                             </video>
                             <div className='overlay1'>
                                 <h1 className='left__title'>Explore the paranormal side of traveling</h1>
-                                <p className='left__subTitle'>Over 100,000 of locations all over the world.</p>
+                                <p className='left__subTitle'>Over 100,000 locations all over the world.</p>
                             </div>
                         </div>
                     </section>

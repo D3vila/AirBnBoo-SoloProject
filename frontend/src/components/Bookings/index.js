@@ -39,15 +39,17 @@ function Bookings() {
         <>
             <div className='userBookings__container'>
             {sortedBookings?.map((booking) => (
-                <div key={booking.id} className='user-booking-container'>
+                <div key={booking.id} className='eachBooking__container'>
                     <NavLink  to={`/listings/${booking.spotId}`}>
-                        <img src={booking.Spot.img} alt='listing'></img>
+                        <img className='booking__img99' src={booking.Spot.img} alt='listing'></img>
                     </NavLink>
                     <div className='booking__info'>
                         <div className='booking__name'>{booking.Spot.name}</div>
                         <div className="booking__address">Address: {booking.Spot.address}</div>
+                        <div className='booking__price'>Price: ${booking.Spot.price} / night</div>
+                        <div className='booking_createdAt'>Booking Created At: {booking.createdAt}</div>
                     </div>
-                    <button type="button" onClick={() => deleteBookingButton(booking.id)}>Cancel</button>
+                    <button className='cancel__button99' type="button" onClick={() => deleteBookingButton(booking.id)}>Cancel 🗑</button>
                 </div>
             ))
             }
