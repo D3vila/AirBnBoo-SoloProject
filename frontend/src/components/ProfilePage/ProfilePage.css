@@ -1,0 +1,62 @@
+.profile__container {
+    margin: 90px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile__pic img {
+    border-radius: 30px;
+    width: 125px;
+    height: 125px;
+    margin-right: 20px;
+    margin-top: 40px;
+    padding: 0;
+}
+
+.username__title {
+    width: 100%;
+    font-family: 'Knewave', cursive;
+    color:orange;
+    text-shadow: 1px 0 5px rgb(0, 0, 0);
+    font-weight: 10;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.name__title {
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: -15px;
+    font-weight: 500;
+}
+
+.email__title {
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: -15px;
+    font-weight:500;
+}
+
+
+
+.booking__title {
+    margin-left: 5px;
+    margin-bottom: 4px;
+    font-family: 'Knewave', cursive;
+    font-weight: 10;
+    padding-bottom: 20px;
+}
+
+.booking__container {
+    margin: 90px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.noBooking{
+    font-size: 25px;
+}

@@ -39,10 +39,10 @@
 }
 
 .homeLogo {
-    background-color: rgb(107, 107, 107);
+    background-color: #6b6b6b;
     box-shadow: 0px 3px 15px rgb(253, 176, 33);
     height: 100px;
-    width: 1890px;
+    width: 103%;
     right: 0;
     left: 0;
     top: 0;
@@ -64,7 +64,7 @@
     text-decoration: none;
     border: orange solid;
     margin: 10px;
-    padding: 8px;
+    padding: 11px;
     border-radius: 15px;
     color: orange;
     font-family: 'Montserrat', sans-serif;
@@ -82,7 +82,7 @@
     text-decoration: none;
     border: orange solid;
     margin: 10px;
-    padding: 8px;
+    padding: 10px;
     border-radius: 15px;
     color: orange;
     font-family: 'Montserrat', sans-serif;
@@ -133,39 +133,76 @@
     z-index: 1001;
   }
 
-  .logout__button {
-      background-color: transparent;
-      border: black solid;
-      border-radius: 10px;
-      width: 100%;
-      padding: 3px;
-      margin-top: 10px;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 18px;
-  }
-
-  .logout__button:hover {
-      cursor: pointer;
-      box-shadow: 0px 0px 5px rgb(0, 0, 0);
-      font-weight: 650;
-      transition: 0.5s;
-  }
-
-  button.profile__button {
-    color: orange;
-    border: orange solid;
+.logout__button {
     background-color: transparent;
+    border: black solid;
     border-radius: 10px;
-    font-size: 20px;
-    padding: 8px;
     width: 100%;
+    padding: 3px;
     margin-top: 10px;
     font-family: 'Montserrat', sans-serif;
-    text-shadow: 0 0 15px rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.logout__button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    font-weight: 650;
+    transition: 0.5s;
+}
+
+button.profile__button {
+color: orange;
+border: orange solid;
+background-color: transparent;
+border-radius: 15px;
+font-size: 20px;
+padding: 8px;
+width: 100%;
+margin-top: 10px;
+font-family: 'Montserrat', sans-serif;
+text-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+button.profile__button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.goProfile__button {
+    background-color: transparent;
+    border: black solid;
+    border-radius: 10px;
+    width: 100%;
+    padding: 3px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+button.goProfile__button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    font-weight: 650;
+    transition: 0.5s;
+}
+
+.icon__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
-  button.profile__button:hover {
-      cursor: pointer;
-      box-shadow: 0px 0px 10px rgb(0, 0, 0);
-      transition: 0.5s;
-  }
+.ghost {
+    padding: 0px 5px;
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.bar {
+    align-self: center;
+    font-size: 25px;
+    padding: 0px 9px;
+    margin-left: 3px;
+}

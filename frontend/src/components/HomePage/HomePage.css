@@ -1,4 +1,4 @@
-video {
+.castleVid {
     object-fit: cover;
     width: 100%;
     margin-left: -15px;
@@ -14,9 +14,6 @@ video {
     font-family: 'Montserrat', sans-serif;
     color: rgb(253, 159, 35);
     text-transform: uppercase;
-    /* letter-spacing: 1vw; */
-    /* line-height: 1.2; */
-    /* font-size: 3vw; */
     text-align: center;
     text-shadow: 0 0 10px rgb(255, 255, 255);
     position: relative;

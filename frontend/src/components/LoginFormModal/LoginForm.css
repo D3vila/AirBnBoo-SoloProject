@@ -1,5 +1,6 @@
 div #modal-content {
     background-color: transparent;
+    z-index: 2;
 }
 .whole__loginForm {
     padding: 0;
