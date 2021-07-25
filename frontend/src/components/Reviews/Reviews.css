@@ -1,0 +1,83 @@
+.reviews__container12 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-top: 5px;
+    width: 70%;
+    padding-bottom: 5em;
+}
+
+.review__container12 {
+    margin-top: 2em;
+    margin-right: 2em;
+    position: relative;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 1em;
+}
+
+.review__container12 {
+    width: 20em;
+}
+
+.review__text12 {
+    padding: 5px;
+    width: 100%;
+}
+
+.image__container12 {
+    width: 4em;
+    height: 4em;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.image12 {
+    position: absolute;
+    display: block;
+    align-self: center;
+}
+
+.reviewer__container12 {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.reviewer12 {
+    padding: 20px;
+}
+
+.timestamp12 {
+    font-size: 13px;
+    top: 10px;
+    margin-top: 10px;;
+}
+
+#deleteReview12 {
+    position: absolute;
+    top: -0.6em;
+    right: 1.5px;
+    background-color: transparent;
+    height: 1.7em;
+    width: 2em;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: none;
+    color: orange;
+    font-size: 25px;
+    font-weight: 50;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+#deleteReview12:hover {
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.5s;
+}

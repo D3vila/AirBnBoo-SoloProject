@@ -1,1 +1,131 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 
+.lighthouse__vid {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 0;
+
+}
+
+.left__title {
+    font-size: 50px;
+    font-weight: 600;
+    z-index: 10;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 8px rgb(0, 0, 0);
+}
+
+.right__title {
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 8px rgb(255, 136, 1);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.split__screen {
+    display: flex;
+    flex-direction: column;
+}
+
+.left__side {
+    height: 250px;
+    background-color: black;
+    background-size: cover;
+}
+
+.left__side, .right__side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left__side .half__page {
+    color:white;
+    text-align: center;
+}
+
+.left__subTitle {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 8px rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.right__side .half__page {
+    color: black;
+    text-align: center;
+}
+
+.signup__form {
+    width: 325px;
+}
+
+.signup__form input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 1px solid gray;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    outline: none;
+}
+
+.signup__form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.signup__button {
+    display: block;
+    width: 100%;
+    background-color: orange;
+    color: black;
+    font-weight: 600;
+    border: none;
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.signup__button:hover {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.split__screen{
+    flex-direction: row;
+    height: 100vh;
+}
+
+.left__side, .right__side {
+    display:flex;
+    width: 50%;
+    height: auto;
+}
+
+.video__container1 {
+    display: block;
+    height: 1249px;
+    left: 0;
+    position: absolute;
+    top: -200px;
+    width: 50%;
+    overflow: hidden;
+
+}
+
+.overlay1 {
+    margin-top: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}

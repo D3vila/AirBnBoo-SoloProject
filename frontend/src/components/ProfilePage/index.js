@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router';
 import Bookings from '../Bookings';
 import './ProfilePage.css';
+import ghostProfile from '../videos/profileGhost.png'
 
 function ProfilePage() {
 
@@ -26,7 +27,7 @@ function ProfilePage() {
     } else {
         sessionBookings = (
             <>
-                <h1>No haunted getaways booked!</h1>
+                <h1 className='noBooking'>- You have no bookings! -</h1>
             </>
         )
     };
@@ -35,16 +36,22 @@ function ProfilePage() {
         <>
             <div className='profile__container'>
                 <div className='profile__pic'>
-                    <img alt=''></img>
+                    <img className='ghostface' src={ghostProfile} alt=''></img>
                 </div>
                 <div className='profile__info'>
-                    <h1>{sessionUser.username}</h1>
-                    <h2>Name: Mr. BoogeyMan</h2>
-                    <h2>Email: </h2>
+                    <div>
+                        <h1 className='username__title'>{sessionUser.username}</h1>
+                    </div>
+                    <div>
+                        <h2 className='name__title'>Name: Mr. BoogeyMan</h2>
+                    </div>
+                    <div>
+                        <h2 className='email__title'>Email: {sessionUser.email} </h2>
+                    </div>
                 </div>
             </div>
             <div className='booking__container'>
-                <h1>Haunted Getaways Booked</h1>
+                <h1 className='booking__title'>Your Booked Haunted Getaways </h1>
                 {sessionBookings}
             </div>
         </>
