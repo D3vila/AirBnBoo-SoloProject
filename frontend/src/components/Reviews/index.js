@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import { getReviews, deleteReview } from '../../store/review';
-import deletebutton from '../videos/delete.png'
 import './Reviews.css'
 import ghostProfile from '../videos/profileGhost.png'
 
@@ -50,14 +49,14 @@ function Reviews() {
                                     {review.User.username}
                                 </div>
                                 <div className='timestamp12'>
-                                    {review.createdAt}
+                                    {new Date(review.createdAt).toLocaleString()}
                                 </div>
                             </div>
                             <div className='review__text12'>{review.review}</div>
                             {sessionUser && sessionUser.id === review.User.id &&
                                 <button id='deleteReview12' onClick={() => removeReview(review.id)}>
                                     {/*<img src={deletebutton} alt='delete logo' />*/}
-                                    <i class="fas fa-trash-alt"></i>
+                                    <i className="fas fa-trash-alt"></i>
                                 </button>
                             }
                         </div>
