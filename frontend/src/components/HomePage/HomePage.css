@@ -1,13 +1,14 @@
 .castleVid {
     object-fit: cover;
     width: 100%;
-    margin-left: -15px;
+    /* margin-left: -15px; */
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
     background-color: black;
     filter: contrast(110%);
+    z-index: -1;
 }
 
 .htitle {
@@ -35,7 +36,7 @@ span {
 }
 
 .explore__link {
-    border: orange solid;
+    border: 4px orange solid;
     border-radius: 20px;
     border-width: 25%;
     padding: 12px;
@@ -43,10 +44,11 @@ span {
     text-decoration: none;
     color: orange;
     transition: transform 0.5s;
-    text-shadow: 0 0 8px rgb(255, 255, 255);
+
 }
 
 .explore__link:hover {
     box-shadow: 0px 0px 20px rgb(255, 252, 252);
+    text-shadow: 0 0 8px rgb(255, 255, 255);
     transition: 0.5s;
 }

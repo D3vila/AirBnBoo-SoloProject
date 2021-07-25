@@ -16,7 +16,7 @@
     flex-direction: row;
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 0 0 10px 0;
 }
 
 .listings__container {
@@ -27,6 +27,7 @@
     height: 100%;
     /* overflow: scroll; */
     font-family: 'Montserrat', sans-serif;
+    z-index: 0;
 }
 
 .nav__image__container {
@@ -36,6 +37,7 @@
     flex-direction: row;
     align-content: center;
     position: relative;
+
 }
 
 .listing__info {
@@ -77,4 +79,5 @@
 
 a:link {
   text-decoration: none;
+
 }

@@ -10,7 +10,7 @@ function HomePage() {
                 <source src={castle} type='video/mp4' />
             </video>
             <header className='htitle'>
-                <h1 className='header__title'>Spend the night at a
+                <h1 className='header__title'>Spend an evening at a
                     <span>haunted Getaway</span>
                     <Link className="explore__link" to="/listings">Explore</Link>
                 </h1>
