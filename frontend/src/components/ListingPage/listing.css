@@ -2,10 +2,23 @@ body {
     background-color: #e6e6e6;
 }
 
+.image__container1 {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+
+}
+
 .mainImage {
     height: 500px;
     width: 750px;
     border-radius: 20px;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.mainImage:hover {
+    transform: scale(1.02);
 }
 
 .listing__container1 {

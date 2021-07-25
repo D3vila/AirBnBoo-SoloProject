@@ -5,6 +5,7 @@
     align-content: space-between;
     margin-top: 5px;
     width: 70%;
+    padding-bottom: 5em;
 }
 
 .review__container12 {
@@ -46,6 +47,7 @@
     margin-bottom: 1em;
     display: flex;
     flex-direction: row;
+
 }
 
 .reviewer12 {
