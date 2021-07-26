@@ -49,4 +49,4 @@ The website can be found here: https://airbnboo.herokuapp.com/
 -cd into the back-end folder and run `npm start`
 -open a second terminal and cd into the front-end folder and run `npm start`
 
-👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
+👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
