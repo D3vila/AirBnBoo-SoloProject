@@ -5,4 +5,4 @@ Users can book a stay and leave reviews after their stay.
 The website can be found here: https://airbnboo.herokuapp.com/
 
 ## Website preview
-![](https://drive.google.com/file/d/1KJqdXVMChAMLSpK4aoBAk1YhX1KOlKsS/view?usp=sharing)
+![](![login-user-features](https://user-images.githubusercontent.com/79862908/126932140-51870fcf-5ec5-45ec-9d31-036332b82ed2.gif))
