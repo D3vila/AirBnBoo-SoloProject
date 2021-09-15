@@ -18,7 +18,6 @@ The website can be found here: https://airbnboo.herokuapp.com/
 - postgresSQL, sequelize (back-end)
 - Heroku (hosting services)
 
-
 ## Instructions on how to build/run the project (installation instructions):
 ------------------------------------------------------------------------------------
 > once project is cloned
