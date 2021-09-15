@@ -1,6 +1,6 @@
 # 👻AirBnBoo👻
 
-A clone of AirBnB is a place where people can book their paranormal/haunted stay at one of the popular haunted locations. 
+A clone of AirBnB is a place where people can book their paranormal/haunted stay at one of the popular haunted locations.
 Users can book a stay and leave reviews after their stay.
 The website can be found here: https://airbnboo.herokuapp.com/
 
@@ -19,9 +19,10 @@ The website can be found here: https://airbnboo.herokuapp.com/
 - postgresSQL, sequelize (back-end)
 - Heroku (hosting services)
 
+
 ## Instructions on how to build/run the project (installation instructions):
 ------------------------------------------------------------------------------------
-> once project is cloned 
+> once project is cloned
 
 - you will cd in to the back-end folder and npm run `npm install` in the terminal
 
@@ -34,10 +35,10 @@ The website can be found here: https://airbnboo.herokuapp.com/
 - Create a user of you choice and with the following commands: `CREATE USER <user> with PASSWORD '<password>' CREATEDB;`
 
 > you will cd into the back-end folder and create a .env
- 
+
 - Copy the contents of *.env-example* into your *.env* file
 - replace the DB_USERNAME, DB_PASSWORD, etc.
-- 
+-
 > Create the database by running sequelize in the terminal
 
 - run `npx dotenv sequelize db:create`
