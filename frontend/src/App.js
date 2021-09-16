@@ -35,6 +35,9 @@ function App() {
           <Route path='/profile'>
             <ProfilePage />
           </Route>
+          { /* <Route path='/profile/:id'>
+            <h1>Profile page</h1>
+          </Route> */}
           <Route path="/signup">
             <SignupFormPage />
           </Route>
