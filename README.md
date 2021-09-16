@@ -1,10 +1,6 @@
 # 👻AirBnBoo👻
 
-<<<<<<< HEAD
 A clone of AirBnB is a place where people can book their paranormal/haunted stay at one of the popular haunted locations.
-=======
-A clone of AirBnB is a place where people can book their paranormal/haunted stay at one of the popular haunted locations.
->>>>>>> 455f22922038c430208a41df5a5d5355cbbf95be
 Users can book a stay and leave reviews after their stay.
 The website can be found here: https://airbnboo.herokuapp.com/
 
