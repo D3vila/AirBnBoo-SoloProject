@@ -15,6 +15,11 @@ function ProfilePage() {
     // const history = useHistory();
     const sessionUser = useSelector(state => state.session.user);
 
+    // const bookings = Object.values(useSelector(state => {
+    //     return state.bookings
+    // }))
+    // console.log(bookings)
+
     const user = useSelector(state => state.user)
     // console.log(user)
 

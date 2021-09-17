@@ -48,8 +48,8 @@ const listingsReducer = (state = initialState, action) => {
                     ...state,
                     [action.listing.id]: action.listing
                 };
-                const listingList = newState.list.map(id => newState[id]);
-                listingList.push(action.listing);
+                const listingList = newState.list?.map(id => newState[id]);
+                listingList?.push(action.listing);
                 return newState;
             }
             return {
