@@ -44,7 +44,7 @@ function ListingPage() {
             spotId: id,
             userId: sessionUser.id,
         }
-        history.push('/profile');
+        history.push(`/users/${sessionUser.id}`);
         await dispatch(addBooking(bookingForm))
     }
 

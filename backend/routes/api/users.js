@@ -45,7 +45,7 @@ router.post(
     }),
 );
 
-router.get('/:id', requireAuth, asyncHandler(async (req, res) => {
+router.get('/:id', asyncHandler(async (req, res) => {
     const id = req.params.id
     const user = await User.findByPk(id)
     const bookings = await Booking.findAll({

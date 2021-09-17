@@ -32,12 +32,12 @@ function App() {
           <Route path='/listings/:id'>
             <ListingPage />
           </Route>
-          <Route path='/profile'>
+          {/*<Route path='/profile'>
+            <ProfilePage />
+          </Route>*/}
+          <Route path='/users/:id'>
             <ProfilePage />
           </Route>
-          { /* <Route path='/profile/:id'>
-            <h1>Profile page</h1>
-          </Route> */}
           <Route path="/signup">
             <SignupFormPage />
           </Route>
