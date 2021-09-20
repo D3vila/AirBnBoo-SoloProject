@@ -38,16 +38,26 @@
     list-style-type: none;
 }
 
-.homeLogo {
-    background-color: #6b6b6b;
+.navbar__container {
+    width: 100%;
+    background-color: gray;
     box-shadow: 0px 3px 15px rgb(253, 176, 33);
     height: 100px;
-    width: 103.1%;
-    right: 0;
-    left: 0;
-    top: 0;
-    margin-left: -50px;
     margin-top: -16px;
+    margin-bottom: 15px;
+
+}
+
+.homeLogo {
+    /* background-color: #6b6b6b; */
+    /* box-shadow: 0px 3px 15px rgb(253, 176, 33); */
+    /* height: 100px; */
+    /* width: 103.1%; */
+    /* right: 0;
+    left: 0;
+    top: 0; */
+    /* margin-left: -50px; */
+    /* margin-top: -16px; */
     position: relative;
     z-index: 1;
 }
