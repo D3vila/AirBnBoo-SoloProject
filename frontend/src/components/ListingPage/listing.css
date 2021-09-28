@@ -15,6 +15,7 @@ body {
     border-radius: 20px;
     transform: scale(1);
     transition: all 0.3s;
+    box-shadow: 0 0 10px black;
 }
 
 .mainImage:hover {
@@ -34,6 +35,7 @@ body {
     padding: 10px;
     margin-left: 20px;
     margin-top: -3px;
+    box-shadow: 0 0 10px black;
 
 }
 

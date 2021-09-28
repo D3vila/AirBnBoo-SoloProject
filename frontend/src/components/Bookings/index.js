@@ -12,14 +12,15 @@ function Bookings() {
     const userId = sessionUser.id;
     const dispatch = useDispatch();
 
-    const booking = Object.values(useSelector(state => {
+    const bookings = Object.values(useSelector(state => {
         return state.bookings
     }))
-    const sortedBookings = booking.sort(function (a, b) {
+    const sortedBookings = bookings.sort(function (a, b) {
         return b.id - a.id;
     })
 
-    // console.log(bookings)
+
+    console.log(bookings)
     // console.log(sortedBookings)
     // console.log("HELLO")
 
@@ -47,7 +48,7 @@ function Bookings() {
                             <div className='booking__name'>{booking?.Spot.name}</div>
                             <div className="booking__address">Address: {booking?.Spot.address}</div>
                             <div className='booking__price'>Price: ${booking?.Spot.price} / night</div>
-                            <div className='booking_createdAt'>Booking Created At: {new Date(booking?.Spot.createdAt).toLocaleString()}</div>
+                            <div className='booking_createdAt'>Booking Created At: {new Date(booking?.createdAt).toLocaleString()}</div>
                         </div>
                         <button className='cancel__button99' type="button" onClick={() => deleteBookingButton(booking?.id)}>Cancel 🗑</button>
                     </div>

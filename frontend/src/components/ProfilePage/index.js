@@ -27,7 +27,9 @@ function ProfilePage() {
         dispatch(getOneUser(id))
     }, [dispatch, id])
 
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     let sessionBookings;
     if (user?.bookings?.length) {
