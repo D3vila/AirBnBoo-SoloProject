@@ -63,7 +63,7 @@ body {
 .booking__container1{
     background-color: white;
     position: relative;
-    width: 10%;
+    /* width: 100px; */
     height: 100px;
     border-radius: 20px;
     box-shadow: 0 0 10px black;

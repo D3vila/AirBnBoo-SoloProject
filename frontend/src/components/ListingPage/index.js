@@ -90,8 +90,8 @@ function ListingPage() {
                     <Reviews />
                     <div className='booking__container1'>
                         <div className='price__container1'>
-                            <div className='price__one'>${listing.price}</div>
-                            <div className='per__night'>/ night</div>
+                            <div className='price__one'>${listing.price} / night</div>
+                            {/*<div className='per__night'>/ night</div>*/}
                         </div>
                         {sessionBookButton}
                     </div>
