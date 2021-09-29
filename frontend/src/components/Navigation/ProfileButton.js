@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from 'react-redux';
+// import { NavLink } from "react-router-dom";
 import * as sessionActions from '../../store/session';
 import './Navigation.css';
 import { useHistory } from 'react-router-dom'
 
 function ProfileButton({ user }) {
+  // const sessionUser = useSelector(state => state.session.user);
   const dispatch = useDispatch();
   const history = useHistory();
   const [showMenu, setShowMenu] = useState(false);
+  // console.log(user.id)
 
   const openMenu = () => {
     if (showMenu) return;
@@ -34,7 +37,7 @@ function ProfileButton({ user }) {
 
   const profileRedirect = (e) => {
     e.preventDefault();
-    history.push('/profile');
+    history.push(`/users/${user.id}`);
   }
 
   return (

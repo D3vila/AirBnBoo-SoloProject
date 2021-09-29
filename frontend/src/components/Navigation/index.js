@@ -27,19 +27,21 @@ function Navigation({ isLoaded }) {
   }
 
   return (
-    <ul>
-      <li className='nav__list'>
-        <div className='homeLogo'>
-          <NavLink className='AirbnbWord' exact to="/">AirBnBoo
-            <img className='booIcon' src={Logo} alt='icon' />
-          </NavLink>
-        </div>
-        <div className='topnav-right'>
-          <NavLink className='listing__link' to='/listings'>Listings</NavLink>
-          {isLoaded && sessionLinks}
-        </div>
-      </li>
-    </ul>
+    <nav className='navbar__container'>
+      <ul>
+        <li className='nav__list'>
+          <div className='homeLogo'>
+            <NavLink className='AirbnbWord' exact to="/">AirBnBoo
+              <img className='booIcon' src={Logo} alt='icon' />
+            </NavLink>
+          </div>
+          <div className='topnav-right'>
+            <NavLink className='listing__link' to='/listings'>Listings</NavLink>
+            {isLoaded && sessionLinks}
+          </div>
+        </li>
+      </ul>
+    </nav>
   );
 }
 

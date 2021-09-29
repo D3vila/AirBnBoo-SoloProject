@@ -25,6 +25,7 @@ function Reviews() {
 
     const removeReview = (id) => {
         dispatch(deleteReview(id))
+        window.alert('Review has been deleted')
     }
 
     useEffect(() => {

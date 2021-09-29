@@ -1,26 +1,38 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { useHistory } from 'react-router';
+import React, { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+// import { useHistory } from 'react-router';
 import Bookings from '../Bookings';
+import {getOneUser} from '../../store/users'
 import './ProfilePage.css';
 import ghostProfile from '../videos/profileGhost.png'
 
 function ProfilePage() {
+    // const [user, setUser] = useState({});
+    const { id } = useParams();
+    const dispatch = useDispatch();
 
-    const history = useHistory();
+    // const history = useHistory();
     const sessionUser = useSelector(state => state.session.user);
-    const bookings = Object.values(useSelector(state => {
-        return state.bookings
-    }))
+
+    // const bookings = Object.values(useSelector(state => {
+    //     return state.bookings
+    // }))
     // console.log(bookings)
 
+    const user = useSelector(state => state.user)
+    // console.log(user)
 
-    if (!sessionUser) {
-        history.push('/')
-    }
+    useEffect(() => {
+        dispatch(getOneUser(id))
+    }, [dispatch, id])
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     let sessionBookings;
-    if (bookings.length) {
+    if (user?.bookings?.length) {
         sessionBookings = (
             <Bookings />
         )
@@ -36,7 +48,7 @@ function ProfilePage() {
         <>
             <div className='profile__container'>
                 <div className='profile__pic'>
-                    <img className='ghostface' src={ghostProfile} alt=''></img>
+                    <img className='ghostface' src={ghostProfile} alt='user'></img>
                 </div>
                 <div className='profile__info'>
                     <div>

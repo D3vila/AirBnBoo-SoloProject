@@ -95,7 +95,7 @@ function SignupFormPage() {
                             <label>
                                 Confirm Password
                                 <input
-                                    type='text'
+                                    type='password'
                                     value={confirmPassword}
                                     onChange={(e) => setConfirmPassword(e.target.value)}
 

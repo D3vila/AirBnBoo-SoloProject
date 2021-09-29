@@ -23,6 +23,10 @@ function ListingPage() {
         dispatch(getAListing(id))
     }, [id, dispatch])
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     let sessionReview;
     if (sessionUser) {
         sessionReview = (
@@ -44,7 +48,7 @@ function ListingPage() {
             spotId: id,
             userId: sessionUser.id,
         }
-        history.push('/profile');
+        history.push(`/users/${sessionUser.id}`);
         await dispatch(addBooking(bookingForm))
     }
 
@@ -86,8 +90,8 @@ function ListingPage() {
                     <Reviews />
                     <div className='booking__container1'>
                         <div className='price__container1'>
-                            <div className='price__one'>${listing.price}</div>
-                            <div className='per__night'>/ night</div>
+                            <div className='price__one'>${listing.price} / night</div>
+                            {/*<div className='per__night'>/ night</div>*/}
                         </div>
                         {sessionBookButton}
                     </div>

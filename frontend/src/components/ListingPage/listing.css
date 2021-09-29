@@ -15,6 +15,7 @@ body {
     border-radius: 20px;
     transform: scale(1);
     transition: all 0.3s;
+    box-shadow: 0 0 10px black;
 }
 
 .mainImage:hover {
@@ -34,6 +35,7 @@ body {
     padding: 10px;
     margin-left: 20px;
     margin-top: -3px;
+    box-shadow: 0 0 10px black;
 
 }
 
@@ -63,7 +65,7 @@ body {
 .booking__container1{
     background-color: white;
     position: relative;
-    width: 10%;
+    /* width: 100px; */
     height: 100px;
     border-radius: 20px;
     box-shadow: 0 0 10px black;

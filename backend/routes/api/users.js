@@ -3,10 +3,11 @@ const express = require('express');
 const asyncHandler = require('express-async-handler');
 const { check } = require('express-validator');
 const { handleValidationErrors } = require('../../utils/validation');
-const router = express.Router();
 
 const { setTokenCookie, requireAuth } = require('../../utils/auth');
-const { User } = require('../../db/models');
+const { User, Booking, Spot } = require('../../db/models');
+
+const router = express.Router();
 
 const validateSignup = [
     check('email')
@@ -43,5 +44,21 @@ router.post(
         });
     }),
 );
+
+router.get('/:id', asyncHandler(async (req, res) => {
+    const id = req.params.id
+    const user = await User.findByPk(id)
+    const bookings = await Booking.findAll({
+        where: {
+            userId: user.id
+        }
+    })
+    const spots = await Spot.findAll({
+        where: {
+            userId: user.id
+        }
+    })
+    return res.json({ user, bookings, spots })
+}))
 
 module.exports = router;
