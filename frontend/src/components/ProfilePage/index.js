@@ -48,7 +48,7 @@ function ProfilePage() {
         <>
             <div className='profile__container'>
                 <div className='profile__pic'>
-                    <img className='ghostface' src={ghostProfile} alt=''></img>
+                    <img className='ghostface' src={ghostProfile} alt='user'></img>
                 </div>
                 <div className='profile__info'>
                     <div>
