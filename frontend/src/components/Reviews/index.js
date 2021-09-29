@@ -44,7 +44,7 @@ function Reviews() {
                         <div key={review.id} className='review__container12'>
                             <div className='reviewer__container12'>
                                 <div className="image__container12">
-                                    <img className='image12' src={ghostProfile} alt="reviewer"></img>
+                                    <img className='image12' src={review.User.image_url} alt="reviewer"></img>
                                 </div>
                                 <div className='reviewer12'>
                                     {review.User.username}
