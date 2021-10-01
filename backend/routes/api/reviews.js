@@ -25,11 +25,11 @@ router.put('/:id', asyncHandler(async (req, res) => {
     // };
     // await db.Review.update(req.body, filter)
     await db.Review.update(req.body, {
-        where: {id}
+        where: { id }
     })
     const updateReview = await db.Review.findOne({
-        where: {id},
-            include: {model: db.User}
+        where: { id },
+        include: { model: db.User }
 
     });
     return res.json({ updateReview })

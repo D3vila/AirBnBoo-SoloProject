@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/D3vila/AirBnBoo-SoloProject/issues"
   },
-  "homepage": "https://github.com/D3vila/AirBnBoo-SoloProject#readme"
+  "homepage": "https://github.com/D3vila/AirBnBoo-SoloProject#readme",
+  "dependencies": {
+    "sequelize": "^6.6.5"
+  }
 }

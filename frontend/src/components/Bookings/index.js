@@ -20,7 +20,7 @@ function Bookings() {
     })
 
 
-    console.log(bookings)
+    // console.log(bookings)
     // console.log(sortedBookings)
     // console.log("HELLO")
 
