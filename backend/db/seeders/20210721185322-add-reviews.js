@@ -53,7 +53,21 @@ module.exports = {
       { "userId": 7, "spotId": 7, "review": "I love this location. I went with some friends and we had a really good time. luckily we had an investigation team stay the same night and we tag along. GREAT TIME!", "createdAt": new Date(), "updatedAt": new Date() },
       { "userId": 7, "spotId": 6, "review": "Came for the experience and it didn't disappoint. I didn't believe until my stay. A must stay for people on the fence about the afterlife.", "createdAt": new Date(), "updatedAt": new Date() },
       { "userId": 8, "spotId": 2, "review": "Didn't experience anything. it was a quiet night and I slept like a baby.", "createdAt": new Date(), "updatedAt": new Date() },
-      { "userId": 8, "spotId": 3, "review": "I love this location. I went with some friends and we had a really good time. luckily we had an investigation team stay the same night and we tag along. GREAT TIME!", "createdAt": new Date(), "updatedAt": new Date() }
+      { "userId": 8, "spotId": 3, "review": "I love this location. I went with some friends and we had a really good time. luckily we had an investigation team stay the same night and we tag along. GREAT TIME!", "createdAt": new Date(), "updatedAt": new Date() },
+      { "userId": 8, "spotId": 2, "review": "Didn't experience anything. it was a quiet night and I slept like a baby.", "createdAt": new Date(), "updatedAt": new Date() },
+      { "userId": 9, "spotId": 11, "review": "Didn't experience anything. it was a quiet night and I slept like a baby.", "createdAt": new Date(), "updatedAt": new Date() },
+      { "userId": 10, "spotId": 12, "review": "Spooky AF", "createdAt": new Date(), "updatedAt": new Date() },
+      { "userId": 11, "spotId": 12, "review": "Didn't experience anything. it was a quiet night and I slept like a baby.", "createdAt": new Date(), "updatedAt": new Date() },
+      { "userId": 1, "spotId": 12, "review": "5/5 stars!!! I enjoyed the experience and stay here.", "createdAt": new Date(), "updatedAt": new Date() },
+      { "userId": 10, "spotId": 12, "review": "GREAT NIGHT and full of ghost guest!", "createdAt": new Date(), "updatedAt": new Date() },
+      { "userId": 2, "spotId": 13, "review": "Spooky AF", "createdAt": new Date(), "updatedAt": new Date() },
+      { "userId": 11, "spotId": 13, "review": "Didn't experience anything. it was a quiet night and I slept like a baby.", "createdAt": new Date(), "updatedAt": new Date() },
+      { "userId": 1, "spotId": 13, "review": "5/5 stars!!! I enjoyed the experience and stay here.", "createdAt": new Date(), "updatedAt": new Date() },
+      { "userId": 8, "spotId": 13, "review": "GREAT NIGHT and full of ghost guest!", "createdAt": new Date(), "updatedAt": new Date() },
+      { "userId": 9, "spotId": 14, "review": "Spooky AF", "createdAt": new Date(), "updatedAt": new Date() },
+      { "userId": 11, "spotId": 14, "review": "Didn't experience anything. it was a quiet night and I slept like a baby.", "createdAt": new Date(), "updatedAt": new Date() },
+      { "userId": 2, "spotId": 14, "review": "5/5 stars!!! I enjoyed the experience and stay here.", "createdAt": new Date(), "updatedAt": new Date() },
+      { "userId": 10, "spotId": 14, "review": "GREAT NIGHT and full of ghost guest!", "createdAt": new Date(), "updatedAt": new Date() }
     ], {});
   },
 
