@@ -40,7 +40,7 @@
 
 .navbar__container {
     width: 100%;
-    background-color: gray;
+    background: linear-gradient(0deg, #818181 50%, rgb(92, 92, 92) 90%);
     box-shadow: 0px 3px 15px rgb(253, 176, 33);
     height: 100px;
     margin-top: -16px;

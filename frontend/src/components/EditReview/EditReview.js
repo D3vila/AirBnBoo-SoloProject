@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { updateReview } from '../../store/review';
+import './editReview.css'
 
 export default function EditReview ({ selectedReview, setShowModal }) {
     const dispatch = useDispatch();
@@ -25,9 +26,8 @@ export default function EditReview ({ selectedReview, setShowModal }) {
             <form className='editReviewForm' onSubmit={handleEdit}>
                 <div>
                     <textarea name='review' value={review} onChange={e => setReview(e.target.value)} />
-
                 </div>
-                <div>
+                <div className='editButtonDiv'>
                     <button type='submit' className='editReviewButtonForm'>Update Review</button>
                 </div>
 
