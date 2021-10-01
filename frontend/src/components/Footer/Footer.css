@@ -47,7 +47,8 @@ body {
 
 .footer__title, .footer__info1, .footer__info2 {
     color: orange;
-    text-shadow: 0 0 2px rgb(0, 0, 0);
+   
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 
 
 }
@@ -56,6 +57,8 @@ body {
     margin-bottom: 0;
     padding-top: 0;
     font-size: 20px;
+    font-weight: 600;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 .footer__info h3 {

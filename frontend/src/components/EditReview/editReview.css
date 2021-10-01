@@ -1,0 +1,74 @@
+.editReview_containerModal h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.editReview_containerModal {
+    background: linear-gradient(0deg, #ffaa0c 50%, rgba(226, 128, 0, 0.918) 90%);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.editReviewForm textarea {
+    resize: vertical;
+    overflow: hidden;
+    height: 100px;
+    width: 500px;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.815);
+    color: rgb(0, 0, 0);
+}
+
+.editReviewForm div {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+}
+
+.editReviewButtonForm {
+    margin-left: 35%;
+    background-color: rgba(228, 228, 228, 0.801);
+
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.editReviewButtonForm:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px black;
+    transition: 0.5s;
+}
+
+
+.editReviewButtonDIV button {
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 1em;
+    right: 1.5px;
+    background-color: transparent;
+    height: 1.7em;
+    width: 2em;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: none;
+    color: orange;
+    font-size: 25px;
+    font-weight: 50;
+    text-shadow: 0 0 4px rgb(0, 0, 0);
+}
+
+.editReviewButtonDIV button:hover {
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.5s;
+}
