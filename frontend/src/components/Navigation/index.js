@@ -27,7 +27,7 @@ function Navigation({ isLoaded }) {
   }
 
   return (
-    <nav className='navbar__container'>
+    <nav className='navbar__container' id='top'>
       <ul>
         <li className='nav__list'>
           <div className='homeLogo'>

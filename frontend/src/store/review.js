@@ -2,6 +2,7 @@ import { csrfFetch } from './csrf';
 
 const ADD_ONE = 'reviews/ADD_ONE';
 const DELETE_ONE = 'reviews/DELETE_ONE';
+const UPDATE = 'reviews/UPDATE'
 const LOAD = 'reviews/LOAD';
 
 
@@ -14,6 +15,11 @@ const deleteOneReview = review => ({
     type: DELETE_ONE,
     review
 });
+
+const update = review => ({
+    type: UPDATE,
+    review
+})
 
 const load = reviews => ({
     type: LOAD,
@@ -38,6 +44,19 @@ export const getReviews = (id) => async dispatch => {
     if (response.ok) {
         const reviews = await response.json();
         dispatch(load(reviews))
+    }
+}
+
+export const updateReview = (editedReview) => async dispatch => {
+    const { id, userId, spotId, review } = editedReview;
+    const response = await csrfFetch(`/api/reviews/${id}`, {
+        method: 'PUT',
+        body: JSON.stringify({ userId, spotId, review })
+    });
+    if (response.ok) {
+        const editedResponse = await response.json();
+        dispatch(update(editedResponse));
+        return editedResponse;
     }
 }
 
@@ -85,6 +104,21 @@ const reviewsReducer = (state = initialState, action) => {
                 }
             }
         }
+
+        case UPDATE: {
+            return {
+                ...state, [action.review.updateReview.id]: {
+                    ...action.review.updateReview
+                }
+            }
+        }
+        // case UPDATE: {
+        //     const newState = {
+        //         ...state, [action.updateReview.review]: action.review
+        //     }
+        //     return newState
+        // }
+
         case LOAD: {
             const allReviews = {};
             action.reviews.forEach(review => {

@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Bookings from '../Bookings';
 import {getOneUser} from '../../store/users'
 import './ProfilePage.css';
-import ghostProfile from '../videos/profileGhost.png'
+// import ghostProfile from '../videos/profileGhost.png'
 
 function ProfilePage() {
     // const [user, setUser] = useState({});
@@ -48,15 +48,15 @@ function ProfilePage() {
         <>
             <div className='profile__container'>
                 <div className='profile__pic'>
-                    <img className='ghostface' src={ghostProfile} alt='user'></img>
+                    <img className='ghostface' src={user.user?.image_url} alt='user'></img>
                 </div>
                 <div className='profile__info'>
                     <div>
                         <h1 className='username__title'>{sessionUser.username}</h1>
                     </div>
-                    <div>
+                   {/* <div>
                         <h2 className='name__title'>Name: Mr. BoogeyMan</h2>
-                    </div>
+                   </div>*/}
                     <div>
                         <h2 className='email__title'>Email: {sessionUser.email} </h2>
                     </div>

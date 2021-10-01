@@ -22,7 +22,7 @@ function ListingsPage() {
         <>
             <div className='listings__page'>
                 <div className='listings__container'>
-                    <nav className='nav__container'>
+                    <div className='nav__container'>
                         {listings.map(listing => {
                             return (
                                 <NavLink key={listing.id} to={`/listings/${listing.id}`}>
@@ -41,7 +41,8 @@ function ListingsPage() {
                                 </NavLink>
                             )
                         })}
-                    </nav>
+                    </div>
+                    <a className='backtoTop' href='#top'>TOP</a>
                 </div>
             </div>
         </>

@@ -32,11 +32,14 @@ body {
     background-color: rgb(253, 246, 241);
     width: 45%;
     border-radius: 30px;
-    padding: 10px;
     margin-left: 20px;
     margin-top: -3px;
     box-shadow: 0 0 10px black;
+    text-align: center;
+}
 
+.listing__info1 h2 {
+    margin-bottom: 0;
 }
 
 .display__container1 {
@@ -46,6 +49,8 @@ body {
 
 .listDesc1 {
     font-size: 20px;
+    padding: 30px;
+    margin-top: 0;
 
 }
 
@@ -72,7 +77,7 @@ body {
 }
 
 .booking__container1 .price__container1 {
-    top: 20px;
+    top: 10px;
     display: flex;
     flex-direction: row;
     margin-bottom: 0px;
