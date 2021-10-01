@@ -81,7 +81,10 @@ function ListingPage() {
                         <img className='mainImage' src={listing.img} alt=''></img>
                     </div>
                     <div className='listing__info1'>
+                        <h2>Location History:</h2>
                         <p className='listDesc1'>{listing.description}</p>
+                        <p>Longitude: {listing.lng}</p>
+                        <p>Latitude: {listing.lat}</p>
                     </div>
                 </div>
                 <h1 className='reviewsTitle123'>Reviews</h1>
