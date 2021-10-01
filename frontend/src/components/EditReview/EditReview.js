@@ -16,7 +16,7 @@ export default function EditReview ({ selectedReview, setShowModal }) {
         };
         dispatch(updateReview(newReview));
         setShowModal(false);
-        window.location.reload()
+        // window.location.reload()
     };
 
     return (

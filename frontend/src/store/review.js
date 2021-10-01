@@ -105,12 +105,18 @@ const reviewsReducer = (state = initialState, action) => {
             }
         }
 
+        case UPDATE: {
+            return {
+                ...state, [action.review.updateReview.id]: {
+                    ...action.review.updateReview
+                }
+            }
+        }
         // case UPDATE: {
-        //     return {
-        //         ...state, [action.review.updatedReview.id]: {
-        //             ...action.review.updatedReview
-        //         }
+        //     const newState = {
+        //         ...state, [action.updateReview.review]: action.review
         //     }
+        //     return newState
         // }
 
         case LOAD: {

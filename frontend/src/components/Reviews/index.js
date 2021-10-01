@@ -43,25 +43,25 @@ function Reviews() {
             <div className='reviews__container12'>
                 {sortedReviews.map((review) => {
                     return (
-                        <div key={review.id} className='review__container12'>
+                        <div key={review?.id} className='review__container12'>
                             <div className='reviewer__container12'>
                                 <div className="image__container12">
-                                    <img className='image12' src={review.User.image_url} alt="reviewer"></img>
+                                    <img className='image12' src={review.User?.image_url} alt="reviewer"></img>
                                 </div>
                                 <div className='reviewer12'>
-                                    {review.User.username}
+                                    {review?.User?.username}
                                 </div>
                                 <div className='timestamp12'>
-                                    {new Date(review.createdAt).toLocaleString()}
+                                    {new Date(review?.createdAt).toLocaleString()}
                                 </div>
                             </div>
-                            <div className='review__text12'>{review.review}</div>
-                            {sessionUser && sessionUser.id === review.User.id &&
-                                <button id='deleteReview12' onClick={() => removeReview(review.id)}>
+                            <div className='review__text12'>{review?.review}</div>
+                            {sessionUser && sessionUser?.id === review.User?.id &&
+                                <button id='deleteReview12' onClick={() => removeReview(review?.id)}>
                                     <i className="fas fa-trash-alt"></i>
                                 </button>
                             }
-                            {sessionUser && sessionUser.id === review.User.id &&
+                            {sessionUser && sessionUser?.id === review.User?.id &&
                                 <EditReviewModal selectedReview={review} />
                             }
                         </div>
