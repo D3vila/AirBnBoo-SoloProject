@@ -19,23 +19,18 @@ router.post('/', asyncHandler(async function (req, res) {
 
 router.put('/:id', asyncHandler(async (req, res) => {
     const { id } = req.params;
-    const filter = {
+    // const filter = {
+    //     where: {id},
+    //     include: {model: db.User}
+    // };
+    // await db.Review.update(req.body, filter)
+    await db.Review.update(req.body, {
         where: {id},
-        include: {model: db.User}
-    };
-    await db.Review.update(req.body, filter)
-    // await db.Review.update(
-    //     req.body,
-    //     {
-    //         where: { id },
-    //         returning: true,
-    //         plain: true,
-    //     }
-    // );
+    })
     const updateReview = await db.Review.findOne({
         where: {id},
             include: {model: db.User}
-        
+
     });
     return res.json({ updateReview })
 }));
