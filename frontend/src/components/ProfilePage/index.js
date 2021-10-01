@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Bookings from '../Bookings';
 import {getOneUser} from '../../store/users'
 import './ProfilePage.css';
-import ghostProfile from '../videos/profileGhost.png'
+// import ghostProfile from '../videos/profileGhost.png'
 
 function ProfilePage() {
     // const [user, setUser] = useState({});

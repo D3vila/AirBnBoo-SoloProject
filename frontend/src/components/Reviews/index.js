@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import { getReviews, deleteReview } from '../../store/review';
+import EditReviewModal from '../EditReview';
 import './Reviews.css'
-import ghostProfile from '../videos/profileGhost.png'
+// import ghostProfile from '../videos/profileGhost.png'
 
 function Reviews() {
     const sessionUser = useSelector(state => state.session.user);
@@ -32,6 +33,7 @@ function Reviews() {
         dispatch(getReviews(id));
     }, [dispatch, id])
 
+
     if (!listingReviews) {
         return null;
     }
@@ -56,9 +58,11 @@ function Reviews() {
                             <div className='review__text12'>{review.review}</div>
                             {sessionUser && sessionUser.id === review.User.id &&
                                 <button id='deleteReview12' onClick={() => removeReview(review.id)}>
-                                    {/*<img src={deletebutton} alt='delete logo' />*/}
                                     <i className="fas fa-trash-alt"></i>
                                 </button>
+                            }
+                            {sessionUser && sessionUser.id === review.User.id &&
+                                <EditReviewModal selectedReview={review} />
                             }
                         </div>
                     )
