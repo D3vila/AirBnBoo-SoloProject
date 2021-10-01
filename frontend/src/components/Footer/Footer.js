@@ -13,13 +13,13 @@ function Footer () {
                     <a className='footer__logos' href='https://github.com/D3vila'>
                         <i className="fab fa-github-square"></i>
                     </a>
+                    <a className='footer__logos' href='https://github.com/D3vila/AirBnBoo-SoloProject'>
+                        <i className="fas fa-code"></i>
+                    </a>
                 </div>
                 <h2 className='footer__title'>Constructed by Antonio Davila-Olivares</h2>
                 <div className='footer__info1'>
-                    <h3>This AirBnb clone was constructed in a week-long react-redux solo project</h3>
-                </div>
-                <div className='footer__info2'>
-                    <h3>{"for App Academy's software engineering bootcamp"}</h3>
+                    <h3>This AirBnb clone was constructed in a week-long react-redux solo project {"for App Academy's software engineering bootcamp"}</h3>
                 </div>
             </div>
         </>

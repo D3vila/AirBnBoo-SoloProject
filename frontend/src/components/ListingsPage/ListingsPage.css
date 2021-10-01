@@ -81,3 +81,17 @@ a:link {
   text-decoration: none;
 
 }
+
+.backtoTop {
+    bottom: 210px;
+    right: 0;
+
+
+    position: fixed;
+    /* margin-bottom: 200px; */
+    margin-right: 480px;
+    text-shadow: -1px 1px 10px rgb(255, 145, 0),
+				  1px 1px 2px rgb(172, 155, 2),
+				  1px -1px 25px rgb(255, 94, 0),
+				  -1px -1px 5px rgb(255, 169, 8);
+}
