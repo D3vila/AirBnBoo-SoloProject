@@ -11,7 +11,7 @@ The website can be found here: https://airbnboo.herokuapp.com/
 
 ## Technologies used for website:
 
-- HTML, Vanilla CSS, Javascript (front-end)
+- HTML, Pure CSS, Javascript (front-end)
 - React (front-end)
 - Redux (front-end)
 - csurf, dotenv, bcrypt, cookie-parser (back-end)
