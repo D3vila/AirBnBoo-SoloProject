@@ -20,6 +20,15 @@ The website can be found here: https://airbnboo.herokuapp.com/
 - postgresSQL, sequelize (back-end)
 - Heroku (hosting services)
 
+## Features
+
+- Sign up with user name, password
+- login with email and password
+- See all locations with details and pictures
+- Post a review of location and delete or revise it
+- Book location and cancel it
+
+
 ## Instructions on how to build/run the project (installation instructions):
 ------------------------------------------------------------------------------------
 > once project is cloned
