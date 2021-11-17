@@ -28,6 +28,10 @@ The website can be found here: https://airbnboo.herokuapp.com/
 - Post a review of location and delete or revise it
 - Book location and cancel it
 
+## Future Features
+- Search Bar to find Locations
+- Google maps API
+- Users can create location for other users to book
 
 ## Instructions on how to build/run the project (installation instructions):
 ------------------------------------------------------------------------------------
