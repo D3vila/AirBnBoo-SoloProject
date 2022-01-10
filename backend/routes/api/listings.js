@@ -16,5 +16,19 @@ router.get('/:id', asyncHandler(async function (req, res) {
     return res.json(listing);
 }))
 
+router.post('/', asyncHandler(async function (req, res) {
+    const { userId, description, address, lat, lng, name, price, img } = req.body;
+    const spot = await db.Spot.create({
+        userId,
+        description,
+        address,
+        lat,
+        lng,
+        name,
+        price,
+        img
+    })
+    return res.json({ spot })
+}))
 
 module.exports = router;

@@ -8,6 +8,7 @@
     border-radius: 25px;
     box-shadow: 5px 0px 20px rgb(0, 0, 0);
     transition: transform 0.5s;
+
 }
 
 .booIcon:hover {
@@ -59,7 +60,7 @@
     /* margin-left: -50px; */
     /* margin-top: -16px; */
     position: relative;
-    z-index: 1;
+
 }
 
 .topnav-right {
@@ -67,7 +68,7 @@
     margin-left: 79%;
     margin-top: -84px;
     display: flex;
-    z-index: 1001;
+    /* z-index: 1001; */
 }
 
 .listing__link {
@@ -80,7 +81,7 @@
     font-family: 'Montserrat', sans-serif;
     text-shadow: 0 0 15px rgb(0, 0, 0);
     font-size: 20px;
-    z-index: 1001;
+    /* z-index: 1001; */
 }
 
 .listing__link:hover {
@@ -98,7 +99,7 @@
     font-family: 'Montserrat', sans-serif;
     text-shadow: 0 0 15px rgb(0, 0, 0);
     font-size: 20px;
-    z-index: 1001;
+    /* z-index: 1001; */
 }
 
 .signup__link:hover{
@@ -118,7 +119,7 @@
     font-family: 'Montserrat', sans-serif;
     text-shadow: 0 0 15px rgb(0, 0, 0);
     font-size: 20px;
-    z-index: 1001;
+    /* z-index: 1001; */
 }
 
 .Login__button:hover {
@@ -140,7 +141,7 @@
     z-index: 2;
     text-align: center;
     font-size: 18px;
-    z-index: 1001;
+    /* z-index: 1001; */
   }
 
 .logout__button {

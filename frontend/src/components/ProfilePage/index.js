@@ -52,13 +52,13 @@ function ProfilePage() {
                 </div>
                 <div className='profile__info'>
                     <div>
-                        <h1 className='username__title'>{sessionUser.username}</h1>
+                        <h1 className='username__title'>{sessionUser?.username}</h1>
                     </div>
                    {/* <div>
                         <h2 className='name__title'>Name: Mr. BoogeyMan</h2>
                    </div>*/}
                     <div>
-                        <h2 className='email__title'>Email: {sessionUser.email} </h2>
+                        <h2 className='email__title'>Email: {sessionUser?.email} </h2>
                     </div>
                 </div>
             </div>

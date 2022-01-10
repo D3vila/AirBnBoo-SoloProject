@@ -26,7 +26,7 @@ function LoginForm() {
   const demoLogin = () => {
     const credential = 'Demo-lition'
     const password = 'password'
-    history.push('/listings')
+    // history.push('/users/1')
     return dispatch(sessionActions.login({ credential, password }))
       .catch(async (res) => {
         const data = await res.json();
