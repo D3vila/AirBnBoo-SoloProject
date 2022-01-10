@@ -6,21 +6,24 @@
 }
 
 .editReview_containerModal {
-    background: linear-gradient(0deg, #ffaa0c 50%, rgba(226, 128, 0, 0.918) 90%);
+    /* background: linear-gradient(0deg, #ffaa0c 50%, rgba(226, 128, 0, 0.918) 90%); */
     border-radius: 20px;
+    background-color: rgb(214, 212, 212);
     padding: 25px;
 }
 
 .editReviewForm textarea {
     resize: vertical;
     overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
     height: 100px;
     width: 500px;
     font-size: 17px;
     border-radius: 10px;
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.815);
-    color: rgb(0, 0, 0);
+    /* background-color: rgba(255, 255, 255, 0.815); */
+    background: rgba(77, 77, 77, 0.931);
+    color: rgb(255, 255, 255);
 }
 
 .editReviewForm div {
@@ -32,8 +35,8 @@
 
 .editReviewButtonForm {
     margin-left: 35%;
-    background-color: rgba(228, 228, 228, 0.801);
-
+    background-color: rgba(255, 147, 6, 0.9);
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     border: 3px solid black;
     border-radius: 15px;

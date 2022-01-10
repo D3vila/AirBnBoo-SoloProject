@@ -1,5 +1,6 @@
 const LOAD = 'listings/LOAD';
 const ADD_ONE = 'listings/ADD_ONE';
+const CREATE_LISTING = 'listings/CREATE_LISTING';
 
 const load = list => ({
     type: LOAD,
@@ -10,6 +11,8 @@ const addOneListing = listing => ({
     type: ADD_ONE,
     listing,
 })
+
+// const createListing = ()
 
 export const getListings = () => async dispatch => {
     const response = await fetch(`/api/listings`);
