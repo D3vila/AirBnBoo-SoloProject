@@ -8,6 +8,7 @@
     border-radius: 25px;
     box-shadow: 5px 0px 20px rgb(0, 0, 0);
     transition: transform 0.5s;
+    z-index: 1;
 
 }
 
@@ -28,15 +29,18 @@
     text-shadow: 5px 0 15px rgb(0, 0, 0);
     position: static;
     transition: transform 0.5s;
+    z-index: 1;
 }
 
 .AirbnbWord:hover {
     transition: 1s;
     text-shadow: 5px 0px 5px rgb(0, 0, 0);
+
 }
 
 .nav__list {
     list-style-type: none;
+
 }
 
 .navbar__container {
@@ -46,6 +50,7 @@
     height: 100px;
     margin-top: -16px;
     margin-bottom: 15px;
+    z-index: 1;
 
 }
 
@@ -60,6 +65,7 @@
     /* margin-left: -50px; */
     /* margin-top: -16px; */
     position: relative;
+    z-index: 1;
 
 }
 
@@ -68,7 +74,7 @@
     margin-left: 79%;
     margin-top: -84px;
     display: flex;
-    /* z-index: 1001; */
+    z-index: 1;
 }
 
 .listing__link {
