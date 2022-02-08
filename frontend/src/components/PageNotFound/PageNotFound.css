@@ -23,7 +23,7 @@ $blue: #5E7FDC; */
 .face {
 	width: 210px;
 	height: 300px;
-	border: 1px solid #ffbb00;
+	border: 1px solid #dda304;
 	border-radius: 10px;
 	background-color: white;
 	margin: 0 auto;
@@ -124,19 +124,12 @@ $blue: #5E7FDC; */
 
 .nopebtn {
 	/* font-family: "Open Sans"; */
-	font-weight: 400;
-	padding: 20px;
-	background-color: rgba(blue,1.0);
-	color: white;
-	width: 320px;
-	margin: 0 auto;
-	text-align: center;
+	font-weight: 700;
+	color: rgb(255, 196, 0);
+	margin-left: 45%;
 	font-size: 1.2em;
-	border-radius: 5px;
 	cursor: pointer;
-	margin-top: 80px;
-	margin-bottom: 50px;
-	transition: all .2s linear;
+
 
 
 	@media screen and (max-width: 400px) {
@@ -149,8 +142,7 @@ $blue: #5E7FDC; */
 }
 
 .nopebtn:hover {
-    background-color: rgba(blue,0.8);
-    transition: all .2s linear;
+    color:rgb(83, 53, 112);
 }
 
 .shadow {
