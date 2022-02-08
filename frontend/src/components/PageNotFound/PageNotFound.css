@@ -1,0 +1,152 @@
+.face {
+	width: 210px;
+	height: 300px;
+	border: 1px solid #dda304;
+	border-radius: 10px;
+	background-color: white;
+	margin: 0 auto;
+	margin-top: 150px;
+
+    position: relative;
+    box-shadow: -17px 0px 0px rgb(153, 137, 107) inset, 0 0 50px #ffbb00;
+    border-radius: 100px 100px 0 0;
+    animation: float 2s infinite;
+
+	@media screen and (max-width: 400px) {
+		margin-top: 40px;
+    	transform: scale(.8);
+  	}
+}
+.eyes {
+    width: 128px;
+    margin: 0 auto;
+    margin-top: 90px;
+    /* display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 70px 0 0;
+    width: 90px;
+    height: 20px; */
+}
+
+.eyes:before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    border: 7px solid #7a6835;
+    margin-right: 20px;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    border-bottom: 0;
+}
+
+.eyes:after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    border: 7px solid #7a6835;
+    margin-left: 20px;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    border-bottom: 0;
+}
+
+.mouth {
+    width: 40px;
+    height: 15px;
+    border: 7px solid #7a6835;
+    margin: 0 auto;
+    margin-top: 45px;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    border-bottom: 0;
+}
+
+.ghost__feet {
+    width: 100%;
+    position: absolute;
+    bottom: -13px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.ghost__feet-foot {
+  width: 25%;
+  height: 35px;
+  border-radius: 50%;
+  background: white;
+
+}
+.ghost__feet-foot:last-child {
+  background-image: linear-gradient(to right, white 67%, rgb(153, 137, 107) 33%);
+}
+
+.nopeH1 {
+	font-weight: 800;
+	color: #5a480c;
+	text-align: center;
+	font-size: 2.5em;
+	padding-top: 20px;
+
+	@media screen and (max-width: 400px) {
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 2em;
+  	}
+}
+
+.nopebtn {
+	font-weight: 700;
+	color: rgb(255, 196, 0);
+	margin-left: 45%;
+	font-size: 1.2em;
+	cursor: pointer;
+
+
+
+	@media screen and (max-width: 400px) {
+		margin: 0 auto;
+		margin-top: 60px;
+		margin-bottom: 50px;
+    	width: 200px;
+  	}
+
+}
+
+.nopebtn:hover {
+    color:rgb(83, 53, 112);
+}
+
+.shadow {
+    background: rgb(177, 166, 130);
+    width: 175px;
+    height: 40px;
+    margin-top: 50px;
+    border-radius: 50%;
+    margin-left: 45.5%;
+    animation: shadow 2s infinite;
+  }
+
+@keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+
+  @keyframes shadow {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(0.9);
+    }
+  }

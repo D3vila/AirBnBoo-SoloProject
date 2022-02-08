@@ -9,6 +9,7 @@ import ListingsPage from './components/ListingsPage';
 import ListingPage from './components/ListingPage'
 import ProfilePage from './components/ProfilePage'
 import Navigation from './components/Navigation';
+import PageNotFound from './components/PageNotFound/PageNotFound';
 // import Footer from './components/Footer/Footer';
 
 function App() {
@@ -42,7 +43,7 @@ function App() {
             <SignupFormPage />
           </Route>
           <Route>
-            <h1>Under construction or page not found</h1>
+            <PageNotFound />
           </Route>
         </Switch>
       )}
