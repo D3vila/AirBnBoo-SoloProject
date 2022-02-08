@@ -46,6 +46,12 @@ $blue: #5E7FDC; */
     width: 128px;
     margin: 0 auto;
     margin-top: 90px;
+    /* display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 70px 0 0;
+    width: 90px;
+    height: 20px; */
 }
 
 .eyes:before {
@@ -53,7 +59,7 @@ $blue: #5E7FDC; */
     display: inline-block;
     width: 30px;
     height: 15px;
-    border: 7px solid #383A41;
+    border: 7px solid #7a6835;
     margin-right: 20px;
     border-top-left-radius: 22px;
     border-top-right-radius: 22px;
@@ -65,7 +71,7 @@ $blue: #5E7FDC; */
     display: inline-block;
     width: 30px;
     height: 15px;
-    border: 7px solid #383A41;
+    border: 7px solid #7a6835;
     margin-left: 20px;
     border-top-left-radius: 22px;
     border-top-right-radius: 22px;
@@ -74,11 +80,13 @@ $blue: #5E7FDC; */
 
 .mouth {
     width: 40px;
-    height: 5px;
-    border-radius: 5px;
-    background-color: #383A41;
+    height: 15px;
+    border: 7px solid #7a6835;
     margin: 0 auto;
-    margin-top: 65px;
+    margin-top: 45px;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    border-bottom: 0;
 }
 
 .ghost__feet {
@@ -100,7 +108,7 @@ $blue: #5E7FDC; */
   background-image: linear-gradient(to right, white 67%, rgb(153, 137, 107) 33%);
 }
 
-h1 {
+.nopeH1 {
 	font-weight: 800;
 	color: #5a480c;
 	text-align: center;
@@ -114,8 +122,8 @@ h1 {
   	}
 }
 
-.btn {
-	font-family: "Open Sans";
+.nopebtn {
+	/* font-family: "Open Sans"; */
 	font-weight: 400;
 	padding: 20px;
 	background-color: rgba(blue,1.0);
@@ -140,7 +148,7 @@ h1 {
 
 }
 
-.btn:hover {
+.nopebtn:hover {
     background-color: rgba(blue,0.8);
     transition: all .2s linear;
 }

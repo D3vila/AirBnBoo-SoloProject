@@ -18,8 +18,8 @@ export default function PageNotFound() {
                 <div className="shadow"></div>
             </div>
 
-            <h1>Oops! Something went wrong!</h1>
-            <div className="btn">Return to Home</div>
+            <h1 className='nopeH1'>404! PAGE IS STOLEN BY GHOST!</h1>
+            <a className='nopebtn' href='/'>RETURN ME HOME</a>
         </>
     )
 }
