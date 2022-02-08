@@ -1,25 +1,3 @@
-/* $gb: #F2EEE8;
-$wh: #FFFFFF;
-#383A41: #383A41;
-$red: #EB6D6D;
-$blue: #5E7FDC; */
-
-/* $break: 400px; */
-
-/* html, body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	min-height: 100vh;
-	background-color: $gb;
-	font-family: 'Open Sans';
-}
-
-*, *:before, *:after {
-	box-sizing: content-box;
-	transform: translate3d(0, 0, 0);
-} */
-
 .face {
 	width: 210px;
 	height: 300px;
@@ -30,9 +8,6 @@ $blue: #5E7FDC; */
 	margin-top: 150px;
 
     position: relative;
-    /* width: 150px;
-    height: 225px; */
-    /* background: white; */
     box-shadow: -17px 0px 0px rgb(153, 137, 107) inset, 0 0 50px #ffbb00;
     border-radius: 100px 100px 0 0;
     animation: float 2s infinite;
@@ -123,7 +98,6 @@ $blue: #5E7FDC; */
 }
 
 .nopebtn {
-	/* font-family: "Open Sans"; */
 	font-weight: 700;
 	color: rgb(255, 196, 0);
 	margin-left: 45%;
