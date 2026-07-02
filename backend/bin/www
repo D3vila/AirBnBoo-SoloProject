@@ -11,29 +11,8 @@ db.sequelize
   .then(() => {
     console.log('Database connection success! Sequelize is ready to use...');
 
-    console.log('NODE_ENV:', process.env.NODE_ENV);
-    console.log('MIGRATE_ON_START:', process.env.MIGRATE_ON_START);
-    console.log('DATABASE_URL set:', Boolean(process.env.DATABASE_URL));
-
-    const startServer = () => app.listen(port, () => console.log(`Listening on port ${port}...`));
-
-    if (process.env.NODE_ENV === 'production') {
-      console.log('Running sequelize.sync() in production to create missing tables...');
-      db.sequelize
-        .sync()
-        .then(() => {
-          console.log('Database synchronized via sequelize.sync()');
-          startServer();
-        })
-        .catch((err) => {
-          console.error('Error running sequelize.sync():', err);
-          // Still start the server so we can inspect logs; do not crash the process
-          startServer();
-        });
-    } else {
-      // Start listening for connections
-      startServer();
-    }
+    // Start listening for connections once database authentication succeeds
+    app.listen(port, () => console.log(`Listening on port ${port}...`));
   })
   .catch((err) => {
     console.log('Database connection failure.');
