@@ -11,8 +11,26 @@ db.sequelize
   .then(() => {
     console.log('Database connection success! Sequelize is ready to use...');
 
-    // Start listening for connections
-    app.listen(port, () => console.log(`Listening on port ${port}...`));
+    // Optionally run sequelize.sync() on start (useful for deployments without shell access)
+    const runSync = process.env.MIGRATE_ON_START === 'true';
+    const startServer = () => app.listen(port, () => console.log(`Listening on port ${port}...`));
+
+    if (runSync) {
+      db.sequelize
+        .sync()
+        .then(() => {
+          console.log('Database synchronized via sequelize.sync()');
+          startServer();
+        })
+        .catch((err) => {
+          console.error('Error running sequelize.sync():', err);
+          // Still start the server so we can inspect logs; do not crash the process
+          startServer();
+        });
+    } else {
+      // Start listening for connections
+      startServer();
+    }
   })
   .catch((err) => {
     console.log('Database connection failure.');
