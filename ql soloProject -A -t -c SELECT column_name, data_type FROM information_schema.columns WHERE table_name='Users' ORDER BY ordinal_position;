@@ -1,0 +1,17 @@
+                                                     Table "public.Users"
+     Column     |           Type           | Collation | Nullable |                          Default                           
+----------------+--------------------------+-----------+----------+------------------------------------------------------------
+ id             | integer                  |           | not null | nextval('"Users_id_seq"'::regclass)
+ username       | character varying(30)    |           | not null | 
+ email          | character varying(256)   |           | not null | 
+ hashedPassword | bytea                    |           | not null | 
+ image_url      | character varying(500)   |           |          | 'http://placeimg.com/640/480/transport'::character varying
+ createdAt      | timestamp with time zone |           | not null | now()
+ updatedAt      | timestamp with time zone |           | not null | now()
+Indexes:
+    "Users_pkey" PRIMARY KEY, btree (id)
+    "Users_email_key" UNIQUE CONSTRAINT, btree (email)
+    "Users_username_key" UNIQUE CONSTRAINT, btree (username)
+Referenced by:
+    TABLE ""Reviews"" CONSTRAINT "Reviews_userId_fkey" FOREIGN KEY ("userId") REFERENCES "Users"(id)
+
