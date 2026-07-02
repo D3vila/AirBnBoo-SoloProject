@@ -11,11 +11,14 @@ db.sequelize
   .then(() => {
     console.log('Database connection success! Sequelize is ready to use...');
 
-    // Optionally run sequelize.sync() on start (useful for deployments without shell access)
-    const runSync = process.env.MIGRATE_ON_START === 'true';
+    console.log('NODE_ENV:', process.env.NODE_ENV);
+    console.log('MIGRATE_ON_START:', process.env.MIGRATE_ON_START);
+    console.log('DATABASE_URL set:', Boolean(process.env.DATABASE_URL));
+
     const startServer = () => app.listen(port, () => console.log(`Listening on port ${port}...`));
 
-    if (runSync) {
+    if (process.env.NODE_ENV === 'production') {
+      console.log('Running sequelize.sync() in production to create missing tables...');
       db.sequelize
         .sync()
         .then(() => {
