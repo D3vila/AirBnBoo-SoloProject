@@ -6,6 +6,9 @@
   "scripts": {
     "sequelize": "sequelize",
     "sequelize-cli": "sequelize-cli",
+    "migrate": "node -r dotenv/config ./node_modules/.bin/sequelize-cli db:migrate --config config/database.js --env development",
+    "migrate:status": "node -r dotenv/config ./node_modules/.bin/sequelize-cli db:migrate:status --config config/database.js --env development",
+    "seed:all": "node -r dotenv/config ./node_modules/.bin/sequelize-cli db:seed:all --config config/database.js --seeders-path ./db/seeders --env development",
     "start": "per-env",
     "start:development": "nodemon -r dotenv/config ./bin/www",
     "start:production": "node ./bin/www"
@@ -27,7 +30,7 @@
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
     "per-env": "^1.0.2",
-    "pg": "^8.6.0",
+    "pg": "^8.22.0",
     "sequelize": "^5.22.4",
     "sequelize-cli": "^5.5.1"
   },
