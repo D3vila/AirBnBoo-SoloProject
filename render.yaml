@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: airbnboo-backend
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: airbnboo-db
+          property: connectionString
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_EXPIRES_IN
+        value: 604800
+    routes:
+      - path: /
+        destination: /
+
+  - type: pserv
+    name: airbnboo-db
+    runtime: postgres
+    plan: free
+    ipAllowList: []
+    postgresMajorVersion: 14
