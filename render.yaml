@@ -4,7 +4,7 @@ services:
     runtime: node
     plan: free
     buildCommand: npm install && npm run build
-    startCommand: npm run sequelize db:migrate && npm start
+    startCommand: cd backend && npx sequelize-cli db:migrate --url "$DATABASE_URL" && npm start
     envVars:
       - key: NODE_ENV
         value: production
