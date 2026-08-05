@@ -1,0 +1,23 @@
+app = "airbnboo-soloproject"
+release_command = "cd backend && npm install && npx sequelize-cli db:migrate --url \"$DATABASE_URL\" && npx sequelize-cli db:seed:all --url \"$DATABASE_URL\""
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  NODE_ENV = "production"
+  PORT = "5000"
+  JWT_EXPIRES_IN = "604800"
+
+[[services]]
+  internal_port = 5000
+  protocol = "tcp"
+  ports = [
+    { port = 80, handlers = ["http"] },
+    { port = 443, handlers = ["tls", "http"] }
+  ]
+
+  [services.concurrency]
+    type = "connections"
+    soft_limit = 25
+    hard_limit = 50
